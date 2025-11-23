@@ -67,8 +67,8 @@
         "transparent_header_text_color": "#ffffff",
         "transparent_logo": "shopify://shop_images/Gemini_Generated_Image_4htpcg4htpcg4htp_7d7b3b57-2f55-4cfd-bd86-1b2b973ac56f.png",
         "reduce_padding": true,
-        "background_opacity": 40,
-        "background_blur_radius": 10
+        "background_opacity": 0,
+        "background_blur_radius": 0
       }
     }
   },
