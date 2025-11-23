@@ -41,10 +41,10 @@
             "size_chart_page": ""
           }
         },
-        "buy_buttons_bLXpTy": {
+        "buy_buttons_RrVTnc": {
           "type": "buy_buttons",
           "settings": {
-            "show_payment_button": true,
+            "show_payment_button": false,
             "show_gift_card_recipient": true,
             "atc_button_background": "",
             "atc_button_text_color": "",
@@ -64,7 +64,7 @@
         "title_fjYh7d",
         "price_VDj6mT",
         "variant_picker_fwwKat",
-        "buy_buttons_bLXpTy",
+        "buy_buttons_RrVTnc",
         "description_7pcpfy"
       ],
       "custom_css": [],
