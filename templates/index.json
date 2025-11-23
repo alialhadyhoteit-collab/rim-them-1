@@ -94,7 +94,7 @@
         "transition_type": "fade_with_text",
         "autoplay": true,
         "cycle_speed": 4,
-        "background": "#F2F2F2",
+        "background": "#f2f2f2",
         "background_gradient": ""
       }
     },
@@ -102,7 +102,9 @@
       "type": "featured-collection",
       "settings": {
         "collection": "",
-        "products": [],
+        "products": [
+          "titanium-waterproof-multiple-sizes-cartilage-hoop"
+        ],
         "full_width": true,
         "stack_products": true,
         "show_progress_bar": false,
