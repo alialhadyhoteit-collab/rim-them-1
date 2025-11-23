@@ -46,16 +46,10 @@
           "settings": {
             "show_payment_button": false,
             "show_gift_card_recipient": true,
-            "atc_button_background": "",
+            "atc_button_background": "#77f21a",
             "atc_button_text_color": "",
             "payment_button_background": "",
             "payment_button_text_color": ""
-          }
-        },
-        "description_7pcpfy": {
-          "type": "description",
-          "settings": {
-            "collapse_content": false
           }
         }
       },
@@ -64,8 +58,7 @@
         "title_fjYh7d",
         "price_VDj6mT",
         "variant_picker_fwwKat",
-        "buy_buttons_RrVTnc",
-        "description_7pcpfy"
+        "buy_buttons_RrVTnc"
       ],
       "custom_css": [],
       "settings": {
@@ -79,10 +72,10 @@
         "enable_video_looping": true,
         "enable_image_zoom": false,
         "max_image_zoom_level": 3,
-        "background": "",
+        "background": "#ffffff",
         "background_gradient": "",
         "text_color": "",
-        "input_background": "rgba(0,0,0,0)",
+        "input_background": "#ffffff",
         "input_text_color": ""
       }
     }
