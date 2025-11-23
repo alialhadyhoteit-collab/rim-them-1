@@ -50,7 +50,7 @@
       "settings": {
         "enable_sticky": true,
         "hide_on_scroll": false,
-        "logo": "shopify://shop_images/Gemini_Generated_Image_4htpcg4htpcg4htp.png",
+        "logo": "shopify://shop_images/Gemini_Generated_Image_fg2a5efg2a5efg2a.png",
         "logo_max_width": 160,
         "logo_mobile_max_width": 135,
         "menu": "main-menu",
@@ -65,6 +65,7 @@
         "show_country_flag": true,
         "show_country_name": false,
         "transparent_header_text_color": "#ffffff",
+        "transparent_logo": "shopify://shop_images/Gemini_Generated_Image_4htpcg4htpcg4htp_7d7b3b57-2f55-4cfd-bd86-1b2b973ac56f.png",
         "reduce_padding": true,
         "background_opacity": 40,
         "background_blur_radius": 10
