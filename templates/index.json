@@ -101,14 +101,12 @@
     "featured_collection_kEMRtM": {
       "type": "featured-collection",
       "settings": {
-        "collection": "",
-        "products": [
-          "christmas-high-socks"
-        ],
+        "collection": "christmas",
+        "products": [],
         "full_width": true,
         "stack_products": true,
         "show_progress_bar": false,
-        "products_count": 6,
+        "products_count": 4,
         "products_per_row_mobile": "2",
         "products_per_row_desktop": 3,
         "subheading": "",
