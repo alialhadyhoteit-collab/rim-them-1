@@ -14,6 +14,13 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
+        "message_frN7DX": {
+          "type": "message",
+          "settings": {
+            "text": "Announce something here",
+            "url": ""
+          }
+        },
         "message": {
           "type": "message",
           "settings": {
@@ -27,11 +34,20 @@
             "text": "✨ Ne manquez pas ça ! L'offre spéciale se termine le 30/12 ✨",
             "url": ""
           }
+        },
+        "message_ryt9J7": {
+          "type": "message",
+          "settings": {
+            "text": "Announce something here",
+            "url": ""
+          }
         }
       },
       "block_order": [
+        "message_frN7DX",
         "message",
-        "message_hjBBBN"
+        "message_hjBBBN",
+        "message_ryt9J7"
       ],
       "settings": {
         "enable_sticky": false,
@@ -48,11 +64,11 @@
     "header": {
       "type": "header",
       "settings": {
-        "enable_sticky": false,
+        "enable_sticky": true,
         "hide_on_scroll": false,
         "logo": "shopify://shop_images/Gemini_Generated_Image_fg2a5efg2a5efg2a.png",
         "logo_max_width": 160,
-        "logo_mobile_max_width": 135,
+        "logo_mobile_max_width": 95,
         "menu": "main-menu",
         "sidebar_menu": "",
         "secondary_menu": "",
@@ -65,6 +81,7 @@
         "show_country_flag": false,
         "show_country_name": false,
         "transparent_header_text_color": "#ffffff",
+        "transparent_logo": "shopify://shop_images/Gemini_Generated_Image_4htpcg4htpcg4htp_7d7b3b57-2f55-4cfd-bd86-1b2b973ac56f.png",
         "reduce_padding": true,
         "background_opacity": 0,
         "background_blur_radius": 0
