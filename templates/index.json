@@ -9,10 +9,6 @@
  */
 {
   "sections": {
-    "17640086668dbe6eb2": {
-      "type": "_blocks",
-      "settings": {}
-    },
     "slideshow_3CgtVg": {
       "type": "slideshow",
       "blocks": {
@@ -591,7 +587,6 @@
     }
   },
   "order": [
-    "17640086668dbe6eb2",
     "slideshow_3CgtVg",
     "rich_text_Ch4pHa",
     "collection_list_CFrU7n",
