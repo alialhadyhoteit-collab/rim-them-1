@@ -274,6 +274,105 @@
         "section_radius": 0,
         "lazy": true
       }
+    },
+    "34_WV6p94": {
+      "type": "34",
+      "blocks": {
+        "image_qAVy8a": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/blond-woman-with-winter-pine.jpg",
+            "image_shape": "1",
+            "image_radius": 24,
+            "image_border_thickness": 0,
+            "image_border_color": "#000000",
+            "url": ""
+          }
+        },
+        "image_DwDYUD": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/holding-hands.jpg",
+            "image_shape": "3",
+            "image_radius": 24,
+            "image_border_thickness": 0,
+            "image_border_color": "#000000",
+            "url": ""
+          }
+        },
+        "image_qtEB3r": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/pink-lip-gloss.jpg",
+            "image_shape": "1",
+            "image_radius": 24,
+            "image_border_thickness": 0,
+            "image_border_color": "#000000",
+            "url": ""
+          }
+        },
+        "image_3GpbKk": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/man-woman-holding-hands.jpg",
+            "image_shape": "2",
+            "image_radius": 24,
+            "image_border_thickness": 0,
+            "image_border_color": "#000000",
+            "url": ""
+          }
+        },
+        "image_yf83Fg": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/woman-infront-of-tree-with-berries.jpeg",
+            "image_shape": "1",
+            "image_radius": 24,
+            "image_border_thickness": 0,
+            "image_border_color": "#000000",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_qAVy8a",
+        "image_DwDYUD",
+        "image_qtEB3r",
+        "image_3GpbKk",
+        "image_yf83Fg"
+      ],
+      "name": "SS - Scrolling Images #3",
+      "settings": {
+        "slider_speed": 9,
+        "slider_gap": 20,
+        "slider_gap_mobile": 20,
+        "slider_mt": 0,
+        "slider_mt_mobile": 0,
+        "slider_direction": "left",
+        "pause_hover": false,
+        "image_width_desktop": 240,
+        "image_width_mobile": 180,
+        "image_ratio": "square",
+        "image_ratio_mobile": "square",
+        "use_hover": false,
+        "icon_color": "#FFFFFF",
+        "background_color": "#FFFFFF",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "margin_horizontal": 0,
+        "margin_horizontal_mobile": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_horizontal": 0,
+        "padding_horizontal_mobile": 0,
+        "full_width": true,
+        "content_width": 120,
+        "border_thickness": 0,
+        "section_radius": 0,
+        "lazy": true
+      }
     }
   },
   "order": [
@@ -281,6 +380,7 @@
     "slideshow_3CgtVg",
     "rich_text_Ch4pHa",
     "collection_list_CFrU7n",
-    "42_fCYJtb"
+    "42_fCYJtb",
+    "34_WV6p94"
   ]
 }
