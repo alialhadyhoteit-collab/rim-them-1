@@ -38,6 +38,7 @@
     "text_font": "poppins_n4",
     "text_font_size_mobile": 13,
     "currency_code_enabled": false,
+    "show_page_transition": false,
     "heading_apparition": "split_fade",
     "color_swatch_style": "round",
     "show_quick_buy": false,
