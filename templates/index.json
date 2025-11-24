@@ -484,7 +484,7 @@
         "full_width": true,
         "remove_vertical_spacing": true,
         "remove_horizontal_spacing": false,
-        "html": "<div style=\"text-align: center; margin: 15px;\">\n  <svg xmlns=\"http://www.w3.org/2000/svg\" height=\"30px\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"#4CAF50\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" style=\"display: block; margin: 0 auto;\">\n    <path d=\"M22 11.08V12a10 10 0 1 1-5.93-8.83\"></path>\n    <polyline points=\"22 4 12 14.01 9 11.01\"></polyline>\n  </svg>\n  <p style=\"font-size: 14px; margin-top: 5px;\">Garantie Qualité</p>\n</div>",
+        "html": "<div style=\"text-align: center; margin: 15px;\">\n  <svg xmlns=\"http://www.w3.org/2000/svg\" height=\"30px\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"#4CAF50\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" style=\"display: block; margin: 0 auto;\">\n    <path d=\"M22 11.08V12a10 10 0 1 1-5.93-8.83\"></path>\n    <polyline points=\"22 4 12 14.01 9 11.01\"></polyline>\n  </svg>\n  <p style=\"font-size: 14px; margin-top: 5px;\"></p>\n</div>",
         "background": "",
         "background_gradient": "",
         "text_color": ""
@@ -502,8 +502,8 @@
         "heading_gWzMD4": {
           "type": "heading",
           "settings": {
-            "text": "",
-            "heading_tag": "h1",
+            "text": "Garantie du meilleur prix",
+            "heading_tag": "h3",
             "text_color": "",
             "gradient": ""
           }
@@ -511,7 +511,7 @@
         "richtext_DJ7zKw": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+            "content": "<h6>Économisez de l’argent en passant votre commande chez nous<br/><br/></h6>"
           }
         }
       },
@@ -537,7 +537,7 @@
         "full_width": false,
         "remove_vertical_spacing": true,
         "remove_horizontal_spacing": false,
-        "html": "<div style=\"text-align: center; margin: 15px;\">\n  <div style=\"color: #FFC107; font-size: 20px; letter-spacing: 2px;\">\n    ★★★★★\n  </div>\n  <p style=\"font-size: 14px; margin-top: 5px;\">Avis 5/5 Étoiles</p>\n</div>",
+        "html": "<div style=\"text-align: center; margin: 15px;\">\n  <div style=\"color: #FFC107; font-size: 20px; letter-spacing: 2px;\">\n    ★★★★☆\n  </div>\n  <p style=\"font-size: 14px; margin-top: 5px;\">Avis 4.7/5 Étoiles</p>\n</div>",
         "background": "",
         "background_gradient": "",
         "text_color": ""
@@ -549,8 +549,8 @@
         "heading_BDL6Y3": {
           "type": "heading",
           "settings": {
-            "text": "",
-            "heading_tag": "h1",
+            "text": "Évaluations 4,7 ⭐️",
+            "heading_tag": "h3",
             "text_color": "",
             "gradient": ""
           }
@@ -558,7 +558,7 @@
         "richtext_YmfHw9": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+            "content": "<h6>La satisfaction de nos clients est notre priorité numéro un<br/></h6>"
           }
         }
       },
@@ -571,6 +571,19 @@
         "full_width": true,
         "content_width": "small",
         "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "custom_html_tjgdM9": {
+      "type": "custom-html",
+      "name": "Custom HTML",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "html": "",
         "background": "",
         "background_gradient": "",
         "text_color": ""
@@ -588,6 +601,7 @@
     "custom_html_ztTCVp",
     "rich_text_Jq6N46",
     "custom_html_AUHKjh",
-    "rich_text_LwjmXW"
+    "rich_text_LwjmXW",
+    "custom_html_tjgdM9"
   ]
 }
