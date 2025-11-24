@@ -14,13 +14,6 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
-        "message_frN7DX": {
-          "type": "message",
-          "settings": {
-            "text": "Announce something here",
-            "url": ""
-          }
-        },
         "message": {
           "type": "message",
           "settings": {
@@ -34,20 +27,11 @@
             "text": "✨ Ne manquez pas ça ! L'offre spéciale se termine le 30/12 ✨",
             "url": ""
           }
-        },
-        "message_ryt9J7": {
-          "type": "message",
-          "settings": {
-            "text": "Announce something here",
-            "url": ""
-          }
         }
       },
       "block_order": [
-        "message_frN7DX",
         "message",
-        "message_hjBBBN",
-        "message_ryt9J7"
+        "message_hjBBBN"
       ],
       "settings": {
         "enable_sticky": false,
