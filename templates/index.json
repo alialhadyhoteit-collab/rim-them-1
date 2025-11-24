@@ -9,6 +9,10 @@
  */
 {
   "sections": {
+    "17640086668dbe6eb2": {
+      "type": "_blocks",
+      "settings": {}
+    },
     "slideshow_3CgtVg": {
       "type": "slideshow",
       "blocks": {
@@ -20,7 +24,7 @@
             "content_max_width": 780,
             "mobile_text_position": "place-self-end-center text-center",
             "desktop_text_position": "sm:place-self-end-center sm:text-center",
-            "subheading": "De ZwanJouw stijl, jouw Belgisch merk",
+            "subheading": "De Zwan - Votre style, votre marque belge",
             "title": "BLACK FRIDAY",
             "heading_tag": "h2",
             "button_text": "shop now",
@@ -98,34 +102,185 @@
         "background_gradient": ""
       }
     },
-    "featured_collection_kEMRtM": {
-      "type": "featured-collection",
+    "rich_text_Ch4pHa": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_ti6ygW": {
+          "type": "heading",
+          "settings": {
+            "text": "Bienvenue chez De Zwan !",
+            "heading_tag": "h2",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_XJHB7g": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Nous mettons tout notre amour dans chaque création. Pour célébrer ce nouveau chapitre, notre <strong>pré-vente Black Friday</strong> commence !</p><p>✨ Jusqu’à <strong>-70% de réduction</strong> sur vos collections préférées.</p><p>Avantages supplémentaires :<br/>🖤 <strong>2 articles</strong> → +15% de réduction<br/>🖤 <strong>3 articles ou plus</strong> → +20% de réduction</p><p>Merci de faire partie de notre aventure.<br/>👉 <strong>Dépêchez-vous, les stocks sont limités !</strong></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_ti6ygW",
+        "richtext_XJHB7g"
+      ],
+      "name": "Rich text",
       "settings": {
-        "collection": "christmas",
-        "products": [],
         "full_width": true,
-        "stack_products": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "collection_list_CFrU7n": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_Q7Mx3W": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify://shop_images/7_8d702937-a978-4830-88a7-7216e10760ca.png",
+            "subheading": "cristam",
+            "title": "",
+            "url": "",
+            "heading_tag": "h3",
+            "text_position": "place-self-end-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_bTzwTV": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "subheading": "",
+            "title": "",
+            "url": "",
+            "heading_tag": "h2",
+            "text_position": "place-self-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_wAmY68": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "subheading": "",
+            "title": "",
+            "url": "",
+            "heading_tag": "h2",
+            "text_position": "place-self-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_n4PMiV": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "subheading": "",
+            "title": "",
+            "url": "",
+            "heading_tag": "h2",
+            "text_position": "place-self-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "collection_Q7Mx3W",
+        "collection_bTzwTV",
+        "collection_wAmY68",
+        "collection_n4PMiV"
+      ],
+      "name": "Collection list",
+      "settings": {
+        "full_width": true,
+        "stack_collections": true,
+        "collections_per_row_mobile": "2",
+        "collections_per_row": 4,
         "show_progress_bar": false,
-        "products_count": 4,
-        "products_per_row_mobile": "2",
-        "products_per_row_desktop": 3,
         "subheading": "",
-        "title": "Featured collection",
+        "title": "Collection list",
         "content": "",
         "link_url": "",
-        "link_text": "View all",
+        "link_text": "",
         "background": "",
         "background_gradient": "",
         "text_color": "",
         "heading_color": "",
-        "heading_gradient": "",
-        "product_card_background": "",
-        "product_card_text_color": ""
+        "heading_gradient": ""
+      }
+    },
+    "42_fCYJtb": {
+      "type": "42",
+      "blocks": {
+        "text_B4TyKL": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>À propos de nous</strong></p><p>Bienvenue chez <strong>De Zwan</strong>.<br/>Ici, chaque vêtement est conçu pour révéler votre <strong>élégance naturelle</strong> et vous faire sentir <strong>confiant(e)</strong> à chaque instant.<br/>Des pièces raffinées, de haute qualité, qui épousent votre personnalité et subliment votre allure.<br/>Parce que se sentir bien dans ses vêtements, c’est déjà <strong>briller de l’intérieur</strong>.</p>",
+            "text_custom": false,
+            "text_font": "josefin_sans_n4",
+            "text_size": 16,
+            "text_size_mobile": 14,
+            "text_mt": 24,
+            "text_mt_mobile": 16,
+            "text_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "text_B4TyKL"
+      ],
+      "name": "SS - Image With Text #14",
+      "settings": {
+        "body_gap": 48,
+        "body_gap_mobile": 0,
+        "content_horizontal_align": "start",
+        "content_horizontal_align_mobile": "start",
+        "content_vertical_align": "end",
+        "content_padding_vertical": 32,
+        "content_padding_vertical_mobile": 16,
+        "content_padding_horizontal": 32,
+        "content_padding_horizontal_mobile": 16,
+        "image": "shopify://shop_images/Gemini_Generated_Image_2hy4wf2hy4wf2hy4.png",
+        "image_position": "right",
+        "image_position_mobile": "top",
+        "image_ratio": "square",
+        "image_ratio_mobile": "square",
+        "background_color": "#FFFFFF",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 52,
+        "margin_bottom": 52,
+        "margin_horizontal": 0,
+        "margin_horizontal_mobile": 0,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_horizontal": 0,
+        "padding_horizontal_mobile": 0,
+        "full_width": true,
+        "content_width": 120,
+        "border_thickness": 0,
+        "section_radius": 0,
+        "lazy": true
       }
     }
   },
   "order": [
+    "17640086668dbe6eb2",
     "slideshow_3CgtVg",
-    "featured_collection_kEMRtM"
+    "rich_text_Ch4pHa",
+    "collection_list_CFrU7n",
+    "42_fCYJtb"
   ]
 }
