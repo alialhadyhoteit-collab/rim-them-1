@@ -17,14 +17,14 @@
         "message": {
           "type": "message",
           "settings": {
-            "text": "🎁GRATIS VERZENDING - Wij nemen de kosten voor onze rekening!🎁",
+            "text": "🎁 LIVRAISON GRATUITE - Les frais sont pour nous ! 🎁",
             "url": ""
           }
         },
         "message_hjBBBN": {
           "type": "message",
           "settings": {
-            "text": "✨ Mis het niet! Speciale aanbieding eindigt 30/12✨.",
+            "text": "✨ Ne manquez pas ça ! L'offre spéciale se termine le 30/12 ✨",
             "url": ""
           }
         }
