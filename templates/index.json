@@ -257,7 +257,7 @@
         "image_position_mobile": "top",
         "image_ratio": "square",
         "image_ratio_mobile": "square",
-        "background_color": "#FFFFFF",
+        "background_color": "#ffffff",
         "background_gradient": "",
         "border_color": "#000000",
         "margin_top": 52,
@@ -275,94 +275,95 @@
         "lazy": true
       }
     },
-    "34_WV6p94": {
-      "type": "34",
+    "ss_scrolling_images_DtwMgc": {
+      "type": "ss-scrolling-images",
       "blocks": {
-        "image_qAVy8a": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/blond-woman-with-winter-pine.jpg",
-            "image_shape": "1",
-            "image_radius": 24,
-            "image_border_thickness": 0,
-            "image_border_color": "#000000",
-            "url": ""
-          }
-        },
-        "image_DwDYUD": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/holding-hands.jpg",
-            "image_shape": "3",
-            "image_radius": 24,
-            "image_border_thickness": 0,
-            "image_border_color": "#000000",
-            "url": ""
-          }
-        },
-        "image_qtEB3r": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/pink-lip-gloss.jpg",
-            "image_shape": "1",
-            "image_radius": 24,
-            "image_border_thickness": 0,
-            "image_border_color": "#000000",
-            "url": ""
-          }
-        },
-        "image_3GpbKk": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/man-woman-holding-hands.jpg",
-            "image_shape": "2",
-            "image_radius": 24,
-            "image_border_thickness": 0,
-            "image_border_color": "#000000",
-            "url": ""
-          }
-        },
-        "image_yf83Fg": {
+        "image_ahKqaG": {
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/woman-infront-of-tree-with-berries.jpeg",
-            "image_shape": "1",
-            "image_radius": 24,
-            "image_border_thickness": 0,
-            "image_border_color": "#000000",
+            "url": ""
+          }
+        },
+        "image_9DAycx": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/model-poses-near-bushes.jpg",
+            "url": ""
+          }
+        },
+        "image_zh8KNW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/mens-fashion-man-in-shirt-and-jeans-leaning-on-bicycle.jpg",
+            "url": ""
+          }
+        },
+        "image_waQhzX": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/fashionable-man-in-hat.jpg",
+            "url": ""
+          }
+        },
+        "image_HTLeUJ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/downtown-city-skyline.jpg",
             "url": ""
           }
         }
       },
       "block_order": [
-        "image_qAVy8a",
-        "image_DwDYUD",
-        "image_qtEB3r",
-        "image_3GpbKk",
-        "image_yf83Fg"
+        "image_ahKqaG",
+        "image_9DAycx",
+        "image_zh8KNW",
+        "image_waQhzX",
+        "image_HTLeUJ"
       ],
-      "name": "SS - Scrolling Images #3",
+      "name": "SS - Scrolling images",
       "settings": {
-        "slider_speed": 9,
-        "slider_gap": 20,
-        "slider_gap_mobile": 20,
-        "slider_mt": 0,
-        "slider_mt_mobile": 0,
+        "heading": "",
+        "heading_custom": false,
+        "heading_font": "josefin_sans_n4",
+        "heading_size": 40,
+        "heading_height": 130,
+        "heading_align": "center",
+        "slider_speed": 13,
+        "slider_gap": 10,
+        "slider_gap_mobile": 10,
+        "slider_mt": 50,
         "slider_direction": "left",
         "pause_hover": false,
-        "image_width_desktop": 240,
-        "image_width_mobile": 180,
-        "image_ratio": "square",
-        "image_ratio_mobile": "square",
-        "use_hover": false,
-        "icon_color": "#FFFFFF",
+        "image_width_desktop": 300,
+        "image_width_mobile": 120,
+        "image_height_desktop": 400,
+        "image_height_mobile": 200,
+        "image_radius": 10,
+        "use_content": true,
+        "content_position": "center",
+        "content_max_width": 340,
+        "content_max_width_mobile": 340,
+        "content_padding_vertical": 30,
+        "content_padding_horizontal": 30,
+        "content_distance": 60,
+        "content_radius": 10,
+        "content_border_thickness": 0,
+        "use_shadow": true,
+        "text": "<p>Plus de <strong>6000 personnes</strong>choisissent notre style —<strong>oserez-vous vous démarquer ?</strong></p>",
+        "text_custom": false,
+        "text_font": "assistant_n4",
+        "text_size": 24,
+        "text_height": 130,
+        "heading_color": "#000000",
+        "content_bg": "#FFFFFF",
+        "content_border_color": "#000000",
+        "text_color": "#000000",
         "background_color": "#FFFFFF",
         "background_gradient": "",
         "border_color": "#000000",
         "margin_top": 0,
         "margin_bottom": 0,
-        "margin_horizontal": 0,
-        "margin_horizontal_mobile": 0,
         "padding_top": 36,
         "padding_bottom": 36,
         "padding_horizontal": 0,
@@ -370,7 +371,6 @@
         "full_width": true,
         "content_width": 120,
         "border_thickness": 0,
-        "section_radius": 0,
         "lazy": true
       }
     },
@@ -465,14 +465,14 @@
         "date_size": 12,
         "date_size_mobile": 12,
         "date_height": 100,
-        "item_bg_color": "#EBEAE9",
+        "item_bg_color": "#ebeae9",
         "item_bg_gradient": "",
-        "item_border_color": "#DCDCDC",
+        "item_border_color": "#dcdcdc",
         "item_shadow_color": "#000000",
-        "stars_color": "#EE921E",
+        "stars_color": "#ee921e",
         "title_color": "#030712",
         "text_color": "#374151",
-        "date_color": "#4B5563",
+        "date_color": "#4b5563",
         "lazy": true
       }
     },
@@ -596,7 +596,7 @@
     "rich_text_Ch4pHa",
     "collection_list_CFrU7n",
     "42_fCYJtb",
-    "34_WV6p94",
+    "ss_scrolling_images_DtwMgc",
     "66_m6NeEX",
     "custom_html_ztTCVp",
     "rich_text_Jq6N46",

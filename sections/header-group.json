@@ -48,7 +48,7 @@
     "header": {
       "type": "header",
       "settings": {
-        "enable_sticky": true,
+        "enable_sticky": false,
         "hide_on_scroll": false,
         "logo": "shopify://shop_images/Gemini_Generated_Image_fg2a5efg2a5efg2a.png",
         "logo_max_width": 160,
@@ -61,13 +61,12 @@
         "layout": "logo_center_navigation_inline",
         "show_social_media": true,
         "show_locale_selector": true,
-        "show_country_selector": true,
-        "show_country_flag": true,
-        "show_country_name": true,
+        "show_country_selector": false,
+        "show_country_flag": false,
+        "show_country_name": false,
         "transparent_header_text_color": "#ffffff",
-        "transparent_logo": "shopify://shop_images/Gemini_Generated_Image_4htpcg4htpcg4htp_7d7b3b57-2f55-4cfd-bd86-1b2b973ac56f.png",
         "reduce_padding": true,
-        "background_opacity": 100,
+        "background_opacity": 0,
         "background_blur_radius": 0
       }
     }
