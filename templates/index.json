@@ -373,6 +373,120 @@
         "section_radius": 0,
         "lazy": true
       }
+    },
+    "66_m6NeEX": {
+      "type": "66",
+      "blocks": {
+        "item_qU9DUm": {
+          "type": "item",
+          "settings": {
+            "stars_count": 5,
+            "title": "Vincent in Miami 🇺🇸",
+            "text": "Added product to their basket",
+            "date": "now",
+            "url": "",
+            "hide_mobile": false
+          }
+        },
+        "item_PJtKy3": {
+          "type": "item",
+          "settings": {
+            "stars_count": 5,
+            "title": "Get 10% OFF TODAY",
+            "text": "Use code 10OFF at checkout",
+            "date": "now",
+            "url": "",
+            "hide_mobile": false
+          }
+        },
+        "item_RybKyb": {
+          "type": "item",
+          "settings": {
+            "stars_count": 5,
+            "title": "3741 Happy Customers",
+            "text": "Shopped and received products from us last month",
+            "date": "now",
+            "url": "",
+            "hide_mobile": false
+          }
+        },
+        "item_tAPcD8": {
+          "type": "item",
+          "settings": {
+            "stars_count": 5,
+            "title": "Wilfred in California 🇺🇸",
+            "text": "Bought a product and got a free gift",
+            "date": "now",
+            "url": "",
+            "hide_mobile": false
+          }
+        }
+      },
+      "block_order": [
+        "item_qU9DUm",
+        "item_PJtKy3",
+        "item_RybKyb",
+        "item_tAPcD8"
+      ],
+      "name": "SS - Popup Notifications",
+      "settings": {
+        "start_popup": 5,
+        "send_message": 12,
+        "hide_message": 6,
+        "loop_messages": true,
+        "bar_vertical_position": "bottom",
+        "bar_vertical_position_mobile": "bottom",
+        "bar_horizontal_position": "left",
+        "bar_width": 350,
+        "bar_vertical_offset": 20,
+        "bar_vertical_offset_mobile": 20,
+        "bar_horizontal_offset": 20,
+        "bar_horizontal_offset_mobile": 12,
+        "bar_space": 12,
+        "item_padding_vertical": 12,
+        "item_padding_vertical_mobile": 12,
+        "item_padding_horizontal": 12,
+        "item_padding_horizontal_mobile": 12,
+        "item_radius": 12,
+        "item_border_thickness": 1,
+        "item_gap": 12,
+        "item_shadow": true,
+        "item_blur": true,
+        "item_animation": true,
+        "image_size": 48,
+        "image_size_mobile": 48,
+        "image_radius": 12,
+        "image_vertical_align": "center",
+        "image_vertical_align_mobile": "center",
+        "hide_image": false,
+        "stars_size": 12,
+        "title_custom": false,
+        "title_font": "josefin_sans_n4",
+        "title_size": 12,
+        "title_size_mobile": 12,
+        "title_height": 130,
+        "title_mt": 4,
+        "text_custom": false,
+        "text_font": "josefin_sans_n4",
+        "text_size": 12,
+        "text_size_mobile": 12,
+        "text_height": 130,
+        "text_mt": 0,
+        "date_custom": false,
+        "date_font": "josefin_sans_n4",
+        "date_size": 12,
+        "date_size_mobile": 12,
+        "date_height": 100,
+        "item_bg_color": "#EBEAE9",
+        "item_bg_gradient": "",
+        "item_border_color": "#DCDCDC",
+        "item_shadow_color": "#000000",
+        "stars_color": "#EE921E",
+        "title_color": "#030712",
+        "text_color": "#374151",
+        "date_color": "#4B5563",
+        "lazy": true
+      }
     }
   },
   "order": [
@@ -381,6 +495,7 @@
     "rich_text_Ch4pHa",
     "collection_list_CFrU7n",
     "42_fCYJtb",
-    "34_WV6p94"
+    "34_WV6p94",
+    "66_m6NeEX"
   ]
 }
