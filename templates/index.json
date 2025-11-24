@@ -387,12 +387,6 @@
     "rich_text_Jq6N46": {
       "type": "rich-text",
       "blocks": {
-        "subheading_mFb8xk": {
-          "type": "subheading",
-          "settings": {
-            "text": ""
-          }
-        },
         "heading_gWzMD4": {
           "type": "heading",
           "settings": {
@@ -410,7 +404,6 @@
         }
       },
       "block_order": [
-        "subheading_mFb8xk",
         "heading_gWzMD4",
         "richtext_DJ7zKw"
       ],
