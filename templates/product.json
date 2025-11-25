@@ -187,6 +187,105 @@
         "accordion_text_color": ""
       }
     },
+    "ss_scrolling_images_gQwCgy": {
+      "type": "ss-scrolling-images",
+      "blocks": {
+        "image_Hbg3DW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/blond-woman-with-winter-pine.jpg",
+            "url": ""
+          }
+        },
+        "image_gJBgCq": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/business-woman-with-wool-hat.jpg",
+            "url": ""
+          }
+        },
+        "image_EAka4w": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/casual-urban-menswear.jpg",
+            "url": ""
+          }
+        },
+        "image_xnNUUP": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/fashionable-man-in-hat.jpg",
+            "url": ""
+          }
+        },
+        "image_KHLfq6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/downtown-city-skyline.jpg",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_Hbg3DW",
+        "image_gJBgCq",
+        "image_EAka4w",
+        "image_xnNUUP",
+        "image_KHLfq6"
+      ],
+      "name": "SS - Scrolling images",
+      "settings": {
+        "heading": "",
+        "heading_custom": false,
+        "heading_font": "josefin_sans_n4",
+        "heading_size": 40,
+        "heading_height": 130,
+        "heading_align": "center",
+        "slider_speed": 13,
+        "slider_gap": 10,
+        "slider_gap_mobile": 10,
+        "slider_mt": 50,
+        "slider_direction": "left",
+        "pause_hover": false,
+        "image_width_desktop": 300,
+        "image_width_mobile": 120,
+        "image_height_desktop": 400,
+        "image_height_mobile": 200,
+        "image_radius": 10,
+        "use_content": true,
+        "content_position": "center",
+        "content_max_width": 340,
+        "content_max_width_mobile": 340,
+        "content_padding_vertical": 30,
+        "content_padding_horizontal": 30,
+        "content_distance": 60,
+        "content_radius": 10,
+        "content_border_thickness": 0,
+        "use_shadow": true,
+        "text": "<p>Plus de <strong>6000 personnes</strong>choisissent notre style —<strong>oserez-vous vous démarquer ?</strong></p>",
+        "text_custom": false,
+        "text_font": "assistant_n4",
+        "text_size": 24,
+        "text_height": 130,
+        "heading_color": "#000000",
+        "content_bg": "#ffffff",
+        "content_border_color": "#000000",
+        "text_color": "#000000",
+        "background_color": "#ffffff",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_horizontal": 0,
+        "padding_horizontal_mobile": 0,
+        "full_width": true,
+        "content_width": 120,
+        "border_thickness": 0,
+        "lazy": true
+      }
+    },
     "1763926383e0157ea8": {
       "type": "apps",
       "settings": {
@@ -202,6 +301,7 @@
   "order": [
     "main",
     "accordion_content_3pGWpA",
+    "ss_scrolling_images_gQwCgy",
     "1763926383e0157ea8"
   ]
 }
