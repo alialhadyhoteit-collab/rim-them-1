@@ -79,6 +79,11 @@
           "switch_on_hover": true,
           "preselect_variant": false
         }
+      },
+      "4981902369724952902": {
+        "type": "shopify://apps/vo-product-options/blocks/embed-block/430cbd7b-bd20-4c16-ba41-db6f4c645164",
+        "disabled": false,
+        "settings": {}
       }
     }
   },
