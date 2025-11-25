@@ -24,6 +24,24 @@
             "heading_tag": "h2"
           }
         },
+        "liquid_BrgKg9": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div style=\"display: flex; align-items: center; margin-bottom: 12px; font-family: Arial, sans-serif; font-size: 16px;\">\n    <span style=\"font-size: 20px; margin-right: 15px; flex-shrink: 0;\">\n        ✅\n    </span>\n    <span style=\"color: #333;\">\n        Livraison gratuite avec B-post\n    </span>\n</div>"
+          }
+        },
+        "liquid_hi6bwU": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div style=\"display: flex; align-items: center; margin-bottom: 12px; font-family: Arial, sans-serif; font-size: 16px;\">\n    <div style=\"width: 30px; height: 30px; margin-right: 15px; flex-shrink: 0; display: flex; justify-content: center; align-items: center;\">\n        <img \n            src=\"https://img.icons8.com/material-outlined/30/000000/return.png\" \n            alt=\"Garantie 30 Jours\" \n            style=\"width: 100%; height: 100%; object-fit: contain;\"\n        >\n    </div>\n    <span style=\"color: #333;\">\n        Garantie de remboursement de 30 jours\n    </span>\n</div>"
+          }
+        },
+        "liquid_kiegnW": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<!DOCTYPE html>\n<html lang=\"fr\">\n<head>\n    <meta charset=\"UTF-8\">\n    <title>Fonctionnalité Belge</title>\n    \n    <style>\n        /* --- CSS for the Feature Item --- */\n        .feature-item {\n            /* Aligns the flag and the text horizontally and centers them vertically */\n            display: flex; \n            align-items: center;\n            font-family: Arial, sans-serif;\n            font-size: 16px;\n            color: #333;\n        }\n\n        /* --- CSS for the Belgian Flag Icon --- */\n        .flag-belgium {\n            /* Small size for the icon */\n            width: 25px; \n            height: 20px; \n            \n            /* Adds space between the flag and the text */\n            margin-right: 15px;\n            flex-shrink: 0; /* Ensures the flag doesn't shrink */\n            \n            /* Draws the flag colors (Black, Yellow, Red) */\n            background: linear-gradient(\n                to right,\n                #000000 33.333%,\n                #FDDA24 33.333% 66.666%,\n                #EF3340 66.666%\n            );\n            /* Optional: Add a subtle border */\n            border: 1px solid #ccc; \n        }\n        \n        /* CSS for the text */\n        .feature-text {\n            /* Ensures the text stays readable */\n            font-size: 1em;\n        }\n    </style>\n</head>\n<body>\n\n    <div class=\"feature-item\">\n        <div \n            class=\"flag-belgium\" \n            role=\"img\" \n            aria-label=\"Drapeau de la Belgique\"\n        >\n        </div>\n        \n        <div class=\"feature-text\">\n            Entreprise familiale belge depuis 2012\n        </div>\n    </div>\n\n</body>\n</html>"
+          }
+        },
         "price_VDj6mT": {
           "type": "price",
           "settings": {
@@ -60,6 +78,9 @@
       "block_order": [
         "liquid_3WHxw7",
         "title_fjYh7d",
+        "liquid_BrgKg9",
+        "liquid_hi6bwU",
+        "liquid_kiegnW",
         "price_VDj6mT",
         "variant_picker_cTWYT3",
         "quantity_selector_DkbADf",
