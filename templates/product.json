@@ -137,6 +137,56 @@
         "input_text_color": "#f83a3a"
       }
     },
+    "accordion_content_3pGWpA": {
+      "type": "accordion-content",
+      "blocks": {
+        "item_fbVyXc": {
+          "type": "item",
+          "settings": {
+            "title": "",
+            "content": ""
+          }
+        },
+        "item_KMAEAr": {
+          "type": "item",
+          "settings": {
+            "title": "Garantie de remboursement de 30 jours",
+            "content": "<p>Nous sommes tellement convaincus que vous allez adorer notre produit que nous offrons une<strong>garantie de remboursement à 100 %</strong>sur chaque achat. Vous ne courez aucun risque.<br/>Si vous n’êtes pas entirement satisfait, il vous suffit de<strong>retourner le produit dans les 30 jours suivant la réception</strong>et nous vous<strong>rembourserons intégralement</strong>, sans poser de questions.<br/>Consultez notre politique de retour pour plus d’informations.<br/><br/></p>"
+          }
+        },
+        "item_t8Rgjp": {
+          "type": "item",
+          "settings": {
+            "title": "Toujours à votre disposition",
+            "content": "<p>Notre service client est disponible<strong>24 heures sur 24, 7 jours sur 7</strong>pour répondre à toutes vos questions. Qu’il s’agisse d’une commande, d’un retour ou d’une recommandation de produit —<strong>nous sommes toujours là pour vous aider</strong>.<br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_fbVyXc",
+        "item_KMAEAr",
+        "item_t8Rgjp"
+      ],
+      "name": "Accordion content",
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "start",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
     "1763926383e0157ea8": {
       "type": "apps",
       "settings": {
@@ -151,6 +201,7 @@
   },
   "order": [
     "main",
+    "accordion_content_3pGWpA",
     "1763926383e0157ea8"
   ]
 }
