@@ -63,6 +63,12 @@
           "type": "quantity_selector",
           "settings": {}
         },
+        "liquid_rgQAf6": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div class=\"stock-low-indicator\">\n    <span class=\"stock-dot-pulse\"></span>\n    <span>Presque épuisé!</span>\n</div>"
+          }
+        },
         "buy_buttons_RrVTnc": {
           "type": "buy_buttons",
           "settings": {
@@ -84,6 +90,7 @@
         "price_VDj6mT",
         "variant_picker_cTWYT3",
         "quantity_selector_DkbADf",
+        "liquid_rgQAf6",
         "buy_buttons_RrVTnc"
       ],
       "custom_css": [],
