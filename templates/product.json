@@ -66,7 +66,7 @@
             "mf_link_button_type": "mfSizeChartLink",
             "mf_display_style": "1",
             "mf_drawer_position": "0",
-            "custom_css": "/* Just insert css here */"
+            "custom_css": "/* --- 1. General Alignment and Text Styling --- */\n.product-feature-line {\n    /* Ensures icon and text align horizontally */\n    display: flex; \n    align-items: center; \n    margin-bottom: 12px; /* Space between the three features */\n    \n    /* Text appearance */\n    font-family: Arial, sans-serif;\n    font-size: 14px; /* Slightly smaller size than the product title */\n    color: #333; /* Dark gray text color */\n}\n\n/* --- 2. Icon Container Sizing and Spacing --- */\n.feature-icon-box {\n    /* Controls the size of the box holding the icon/image */\n    width: 25px; \n    height: 25px;\n    margin-right: 15px; /* Space between icon and text */\n    flex-shrink: 0; /* Prevents the icon from shrinking on narrow screens */\n    \n    /* Centers content inside the box */\n    display: flex; \n    justify-content: center;\n    align-items: center;\n}\n\n/* Style for any image inside the icon box (B-post, Guarantee) */\n.feature-icon-box img {\n    max-width: 100%;\n    max-height: 100%;\n    object-fit: contain;\n}\n\n/* --- 3. CSS for Drawing the Belgian Flag --- */\n.flag-belgium-icon {\n    /* Set the size of the flag icon */\n    width: 25px; \n    height: 20px; \n    \n    /* Draws the three vertical stripes (Black, Yellow, Red) */\n    background: linear-gradient(\n        to right,\n        #000000 33.333%,\n        #FDDA24 33.333% 66.666%,\n        #EF3340 66.666%\n    );\n    border: 1px solid #ccc; /* Optional: adds a thin light border */\n}"
           }
         },
         "quantity_selector_DkbADf": {
