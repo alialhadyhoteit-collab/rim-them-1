@@ -111,7 +111,30 @@ quick buy information in a template, that will be extracted in JS, but ensure it
       {%- render 'price-list', product: product, variant: product.selected_or_first_available_variant, form_id: product_form_id -%}
     </div>
   </div>
+<a 
+    href="#size-chart-modal-{{ product.id }}" 
+    class="js-modal-open guide-des-tailles-link"
+    style="
+        text-decoration: none; 
+        margin-left: 0; 
+        color: #333; 
+        display: flex; /* Changed to flex to ensure alignment */
+        align-items: center; 
+        font-family: Arial, sans-serif; 
+        font-size: 14px;
+        margin-top: 10px; /* Space below the element above it */
+    "
+>
+    <span style="font-size: 16px; margin-right: 5px;">&#x2388;</span> 
+    Guide des tailles
+</a>
 
+<div 
+    id="size-chart-modal-{{ product.id }}" 
+    style="display: none;"
+>
+    {{ product.metafields.product.size_chart_html }}
+</div>
   <div class="quick-buy-drawer__info">
     {%- comment -%}We only show a limited set of information in the quick buy{%- endcomment -%}
 
