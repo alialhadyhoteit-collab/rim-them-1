@@ -79,6 +79,12 @@
             "payment_button_background": "",
             "payment_button_text_color": ""
           }
+        },
+        "liquid_TQx6KH": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<p style=\"font-family: Arial, sans-serif; font-size: 14px; margin-top: 15px;\">\n    Taille\n    <a \n        href=\"#size-chart-modal\" \n        class=\"js-modal-open\" \n        data-fancybox \n        data-src=\"#size-chart-modal\"\n        style=\"text-decoration: underline; margin-left: 10px; color: #333;\"\n    >\n        <span style=\"display: inline-flex; align-items: center;\">\n            <span style=\"font-size: 16px; margin-right: 5px;\">&#x2388;</span> \n            Guide des tailles\n        </span>\n    </a>\n</p>"
+          }
         }
       },
       "block_order": [
@@ -91,7 +97,8 @@
         "variant_picker_cTWYT3",
         "quantity_selector_DkbADf",
         "liquid_rgQAf6",
-        "buy_buttons_RrVTnc"
+        "buy_buttons_RrVTnc",
+        "liquid_TQx6KH"
       ],
       "custom_css": [],
       "settings": {
