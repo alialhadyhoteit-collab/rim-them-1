@@ -10003,4 +10003,33 @@ split-lines {
 .product-gallery__media.snap-center.is-selected {
   position: relative;
 }
+/* CSS for the Stock Dot Animation (MUST BE IN THEME FILE) */
+.stock-dot-pulse {
+    /* Base style for the dot */
+    background-color: #D32F2F; 
+    border-radius: 50%;
+    width: 8px; 
+    height: 8px;
+    display: inline-block;
+    margin-right: 8px;
+    
+    /* Animation definition */
+    animation: stockPulse 1.5s infinite; 
+}
 
+/* Defines the "waving" or pulsing motion */
+@keyframes stockPulse {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.5); opacity: 0.7; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+/* CSS for Alignment */
+.stock-low-indicator {
+    display: flex; /* Ensures dot and text align */
+    align-items: center;
+    color: #D32F2F; /* Sets the red color for the text */
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
