@@ -59,6 +59,16 @@
             "size_chart_page": ""
           }
         },
+        "magefan_size_chart_size_chart_link_U7x9f3": {
+          "type": "shopify://apps/magefan-size-chart/blocks/size_chart_link/94351537-34e9-4bae-96b1-c1f26b180c07",
+          "settings": {
+            "mf_link_label": "Size Chart",
+            "mf_link_button_type": "mfSizeChartLink",
+            "mf_display_style": "1",
+            "mf_drawer_position": "0",
+            "custom_css": "/* Just insert css here */"
+          }
+        },
         "quantity_selector_DkbADf": {
           "type": "quantity_selector",
           "settings": {}
@@ -95,6 +105,7 @@
         "liquid_kiegnW",
         "price_VDj6mT",
         "variant_picker_cTWYT3",
+        "magefan_size_chart_size_chart_link_U7x9f3",
         "quantity_selector_DkbADf",
         "liquid_rgQAf6",
         "buy_buttons_RrVTnc",
