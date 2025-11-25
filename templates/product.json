@@ -12,6 +12,12 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "liquid_3WHxw7": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<style>\n    /* CSS to style the stars to be green and bold */\n    .rating-container {\n        font-family: Arial, sans-serif;\n        display: flex; /* Aligns the stars and text horizontally */\n        align-items: center;\n    }\n\n    .rating-stars {\n        /* Sets the green color, similar to the image */\n        color: #4CAF50; \n        \n        /* Makes the star characters bold */\n        font-weight: bold; \n        \n        /* Adjusts size to be visually prominent */\n        font-size: 1.1em; \n        \n        /* Space between stars and text */\n        margin-right: 8px; \n    }\n    \n    .rating-text {\n        /* Ensures the text is dark and readable */\n        color: #333; \n        font-size: 0.95em;\n    }\n</style>\n\n<div class=\"rating-container\" itemscope itemtype=\"http://schema.org/Product\">\n    <meta itemprop=\"name\" content=\"MANTEAU D'HIVER ANIEK\">\n\n    <div itemprop=\"aggregateRating\" itemscope itemtype=\"http://schema.org/AggregateRating\">\n        \n        <span class=\"rating-stars\" aria-label=\"Note de 4,7 sur 5 étoiles\">\n            ★★★★★\n        </span>\n        \n        <span class=\"rating-text\">\n            <span itemprop=\"ratingValue\">4,7</span>/5 basé sur \n            <span itemprop=\"reviewCount\">1067</span> avis\n        </span>\n    </div>\n</div>"
+          }
+        },
         "title_fjYh7d": {
           "type": "title",
           "settings": {
@@ -52,6 +58,7 @@
         }
       },
       "block_order": [
+        "liquid_3WHxw7",
         "title_fjYh7d",
         "price_VDj6mT",
         "variant_picker_cTWYT3",
