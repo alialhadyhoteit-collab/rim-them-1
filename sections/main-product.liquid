@@ -110,19 +110,17 @@ quick buy information in a template, that will be extracted in JS, but ensure it
       <a href="{{ product.url }}" class="bold justify-self-start">{{ product.title }}</a>
       {%- render 'price-list', product: product, variant: product.selected_or_first_available_variant, form_id: product_form_id -%}
     </div>
-  </div>
-<a 
+  </div><a 
     href="#size-chart-modal-{{ product.id }}" 
     class="js-modal-open guide-des-tailles-link"
     style="
         text-decoration: none; 
-        margin-left: 0; 
+        margin-left: 10px; 
         color: #333; 
-        display: flex; /* Changed to flex to ensure alignment */
+        display: inline-flex; 
         align-items: center; 
         font-family: Arial, sans-serif; 
         font-size: 14px;
-        margin-top: 10px; /* Space below the element above it */
     "
 >
     <span style="font-size: 16px; margin-right: 5px;">&#x2388;</span> 
@@ -135,6 +133,7 @@ quick buy information in a template, that will be extracted in JS, but ensure it
 >
     {{ product.metafields.product.size_chart_html }}
 </div>
+
   <div class="quick-buy-drawer__info">
     {%- comment -%}We only show a limited set of information in the quick buy{%- endcomment -%}
 
