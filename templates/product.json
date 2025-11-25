@@ -24,7 +24,7 @@
             "show_taxes_notice": false
           }
         },
-        "variant_picker_6U6Gpx": {
+        "variant_picker_cTWYT3": {
           "type": "variant_picker",
           "settings": {
             "hide_sold_out_variants": false,
@@ -54,7 +54,7 @@
       "block_order": [
         "title_fjYh7d",
         "price_VDj6mT",
-        "variant_picker_6U6Gpx",
+        "variant_picker_cTWYT3",
         "quantity_selector_DkbADf",
         "buy_buttons_RrVTnc"
       ],
