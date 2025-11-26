@@ -134,6 +134,20 @@
     "collection_list_CFrU7n": {
       "type": "collection-list",
       "blocks": {
+        "collection_bQ9Fnt": {
+          "type": "collection",
+          "settings": {
+            "collection": "femme",
+            "subheading": "",
+            "title": "",
+            "url": "",
+            "heading_tag": "h2",
+            "text_position": "place-self-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
         "collection_bTzwTV": {
           "type": "collection",
           "settings": {
@@ -167,6 +181,7 @@
           "type": "collection",
           "settings": {
             "collection": "bottes",
+            "image": "shopify://shop_images/S415751b5e5044f34b5d2deb7d6e4a9adD_dd238c2c-d3e7-48fa-8ec5-d4008d8afb4a.webp",
             "subheading": "",
             "title": "",
             "url": "",
@@ -179,6 +194,7 @@
         }
       },
       "block_order": [
+        "collection_bQ9Fnt",
         "collection_bTzwTV",
         "collection_wAmY68",
         "collection_n4PMiV"
