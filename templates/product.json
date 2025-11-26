@@ -225,6 +225,7 @@
         "image_VgGfkn": {
           "type": "Image",
           "settings": {
+            "review_icon": "shopify://shop_images/man-in-blue-jacket.jpg",
             "review_text": "Hugo V.                                                           Jamais Déçu !Je ne compte plus mes achats chez De Zwan. Que ce soit pour un pull, une paire de chaussettes ou un sac de voyage, la qualité est constante. La meilleure boutique en ligne pour s'habiller avec goût.",
             "review_rating": 4.7
           }
