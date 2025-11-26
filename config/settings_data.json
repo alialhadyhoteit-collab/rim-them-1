@@ -60,11 +60,6 @@
     "checkout_button_color": "#1a1a1a",
     "content_for_index": [],
     "blocks": {
-      "1910501027098541543": {
-        "type": "shopify://apps/starapps-variant-image/blocks/starapps-via-embed/2a01d106-3d10-48e8-ba53-5cb971217ac4",
-        "disabled": false,
-        "settings": {}
-      },
       "10402225390556238428": {
         "type": "shopify://apps/magefan-size-chart/blocks/size_chart_button/94351537-34e9-4bae-96b1-c1f26b180c07",
         "disabled": false,
@@ -94,6 +89,11 @@
           "switch_on_hover": true,
           "preselect_variant": false
         }
+      },
+      "1910501027098541543": {
+        "type": "shopify://apps/starapps-variant-image/blocks/starapps-via-embed/2a01d106-3d10-48e8-ba53-5cb971217ac4",
+        "disabled": true,
+        "settings": {}
       }
     }
   },
