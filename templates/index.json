@@ -134,25 +134,10 @@
     "collection_list_CFrU7n": {
       "type": "collection-list",
       "blocks": {
-        "collection_Q7Mx3W": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "image": "shopify://shop_images/7_8d702937-a978-4830-88a7-7216e10760ca.png",
-            "subheading": "cristam",
-            "title": "",
-            "url": "",
-            "heading_tag": "h3",
-            "text_position": "place-self-end-center text-center",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
-        },
         "collection_bTzwTV": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "pantalons-1",
             "subheading": "",
             "title": "",
             "url": "",
@@ -193,7 +178,6 @@
         }
       },
       "block_order": [
-        "collection_Q7Mx3W",
         "collection_bTzwTV",
         "collection_wAmY68",
         "collection_n4PMiV"
