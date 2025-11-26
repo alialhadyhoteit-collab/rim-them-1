@@ -134,10 +134,26 @@
     "collection_list_CFrU7n": {
       "type": "collection-list",
       "blocks": {
+        "collection_g3W9wL": {
+          "type": "collection",
+          "settings": {
+            "collection": "homme",
+            "image": "shopify://shop_images/man-poses-in-light-colored-overcoat.jpg",
+            "subheading": "",
+            "title": "",
+            "url": "",
+            "heading_tag": "h2",
+            "text_position": "place-self-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
         "collection_bQ9Fnt": {
           "type": "collection",
           "settings": {
             "collection": "femme",
+            "image": "shopify://shop_images/vintage-shopping.jpg",
             "subheading": "",
             "title": "",
             "url": "",
@@ -194,6 +210,7 @@
         }
       },
       "block_order": [
+        "collection_g3W9wL",
         "collection_bQ9Fnt",
         "collection_bTzwTV",
         "collection_wAmY68",
