@@ -480,10 +480,11 @@
         "item_MRYLp8": {
           "type": "item",
           "settings": {
-            "stars_count": 5,
-            "heading": "",
-            "text": "",
-            "author_date": ""
+            "stars_count": 4,
+            "heading": "🧥 Qualité impressionnante et livraison rapide",
+            "text": "Ma nouvelle robe longue pour un mariage était splendide. Très élégante, elle tombait parfaitement sans être trop ajustée. Un vrai succès. Merci De Zwan !",
+            "author_date": "Jules P.",
+            "author_image": "shopify://shop_images/women-belguim-face.png"
           }
         },
         "item_fNAQyD": {
