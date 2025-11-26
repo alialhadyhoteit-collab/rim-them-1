@@ -373,26 +373,27 @@
         "slide_DtNkYV": {
           "type": "slide",
           "settings": {
+            "image": "shopify://shop_images/Gemini_Generated_Image_x7c17wx7c17wx7c1.png",
             "navigation_label": "Matériaux de qualité",
             "subheading": "",
             "title": "Matériaux de qualité",
             "content": "<p>Uniquement des fibres naturelles et précieuses. Un confort véritable, un luxe authentique. </p>"
           }
         },
-        "slide_P4nADN": {
+        "slide_xtrrHP": {
           "type": "slide",
           "settings": {
-            "navigation_label": "1966",
-            "subheading": "Subheading",
-            "title": "Heading",
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+            "navigation_label": "Fabriqué à la main",
+            "subheading": "",
+            "title": "Fabriqué à la main",
+            "content": "<p>Chaque pièce est cousue à la main, conçue pour les hommes de caractère.</p>"
           }
         }
       },
       "block_order": [
         "slide_iWBAWi",
         "slide_DtNkYV",
-        "slide_P4nADN"
+        "slide_xtrrHP"
       ],
       "name": "Timeline",
       "settings": {
