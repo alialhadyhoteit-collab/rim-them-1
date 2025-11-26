@@ -134,6 +134,20 @@
     "collection_list_CFrU7n": {
       "type": "collection-list",
       "blocks": {
+        "collection_qzHrTw": {
+          "type": "collection",
+          "settings": {
+            "collection": "homme",
+            "subheading": "",
+            "title": "",
+            "url": "",
+            "heading_tag": "h2",
+            "text_position": "place-self-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
         "collection_g3W9wL": {
           "type": "collection",
           "settings": {
@@ -222,6 +236,7 @@
         }
       },
       "block_order": [
+        "collection_qzHrTw",
         "collection_g3W9wL",
         "collection_bQ9Fnt",
         "collection_bTzwTV",
