@@ -357,6 +357,51 @@
         "lazy": true
       }
     },
+    "timeline_WA3dRw": {
+      "type": "timeline",
+      "blocks": {
+        "slide_iWBAWi": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Gemini_Generated_Image_gj24pbgj24pbgj24.png",
+            "navigation_label": "Sur mesure",
+            "subheading": "",
+            "title": "Sur mesure",
+            "content": "<p>Mesures précises, ajustement parfait. Choisissez l'excellence<br/><br/></p>"
+          }
+        },
+        "slide_DtNkYV": {
+          "type": "slide",
+          "settings": {
+            "navigation_label": "Matériaux de qualité",
+            "subheading": "",
+            "title": "Matériaux de qualité",
+            "content": "<p>Uniquement des fibres naturelles et précieuses. Un confort véritable, un luxe authentique. </p>"
+          }
+        },
+        "slide_P4nADN": {
+          "type": "slide",
+          "settings": {
+            "navigation_label": "1966",
+            "subheading": "Subheading",
+            "title": "Heading",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "slide_iWBAWi",
+        "slide_DtNkYV",
+        "slide_P4nADN"
+      ],
+      "name": "Timeline",
+      "settings": {
+        "full_width": true,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "1763926383e0157ea8": {
       "type": "apps",
       "settings": {
@@ -374,6 +419,7 @@
     "accordion_content_3pGWpA",
     "11_hFJdiM",
     "ss_scrolling_images_gQwCgy",
+    "timeline_WA3dRw",
     "1763926383e0157ea8"
   ]
 }
