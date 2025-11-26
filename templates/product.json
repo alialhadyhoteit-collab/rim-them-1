@@ -160,12 +160,20 @@
             "title": "Toujours à votre disposition",
             "content": "<p>Notre service client est disponible<strong>24 heures sur 24, 7 jours sur 7</strong>pour répondre à toutes vos questions. Qu’il s’agisse d’une commande, d’un retour ou d’une recommandation de produit —<strong>nous sommes toujours là pour vous aider</strong>.<br/></p>"
           }
+        },
+        "item_NCn3Ce": {
+          "type": "item",
+          "settings": {
+            "title": "Livraison gratuite",
+            "content": "<p><strong>Nous offrons la livraison gratuite en Belgique grâce à notre partenaire de confiance, bpost. Vous pouvez facilement suivre votre colis grâce au numéro de suivi que vous recevrez.</strong><br/></p>"
+          }
         }
       },
       "block_order": [
         "item_fbVyXc",
         "item_KMAEAr",
-        "item_t8Rgjp"
+        "item_t8Rgjp",
+        "item_NCn3Ce"
       ],
       "name": "Accordion content",
       "settings": {
