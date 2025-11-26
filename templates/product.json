@@ -468,40 +468,32 @@
     "23_6Kp3yc": {
       "type": "23",
       "blocks": {
-        "item_W7xbec": {
-          "type": "item",
-          "settings": {
-            "stars_count": 5,
-            "heading": "I love it! 😍",
-            "text": "I was initially hesitant to switch from my usual brand to this new one, but I'm so glad I did! This product has exceeded my expectations. It's not only affordable but also incredibly efficient. The quality is top-notch, and it's user-friendly.",
-            "author_date": "Cathrine"
-          }
-        },
-        "item_XwrXPw": {
-          "type": "item",
-          "settings": {
-            "stars_count": 5,
-            "heading": "I love it! 😍",
-            "text": "I was initially hesitant to switch from my usual brand to this new one, but I'm so glad I did! This product has exceeded my expectations. It's not only affordable but also incredibly efficient. The quality is top-notch, and it's user-friendly.",
-            "author_date": "Cathrine"
-          }
-        },
         "item_eTPdBz": {
           "type": "item",
           "settings": {
             "stars_count": 5,
-            "heading": "I love it! 😍",
+            "heading": "",
             "text": "I was initially hesitant to switch from my usual brand to this new one, but I'm so glad I did! This product has exceeded my expectations. It's not only affordable but also incredibly efficient. The quality is top-notch, and it's user-friendly.",
             "author_date": "Cathrine"
+          }
+        },
+        "item_MRYLp8": {
+          "type": "item",
+          "settings": {
+            "stars_count": 5,
+            "heading": "",
+            "text": "",
+            "author_date": ""
           }
         },
         "item_fNAQyD": {
           "type": "item",
           "settings": {
             "stars_count": 5,
-            "heading": "I love it! 😍",
-            "text": "I was initially hesitant to switch from my usual brand to this new one, but I'm so glad I did! This product has exceeded my expectations. It's not only affordable but also incredibly efficient. The quality is top-notch, and it's user-friendly.",
-            "author_date": "Cathrine"
+            "heading": "💕 Vêtements confortables et modernes",
+            "text": "J'ai craqué pour un petit sac bandoulière chez De Zwan il y a deux mois. La qualité du cuir est excellente et la couleur n'a pas bougé. Il est assez spacieux pour tout ce dont j'ai besoin au quotidien. Très pratique.",
+            "author_date": "Jeanne C",
+            "author_image": "shopify://shop_images/women-image-belgum.png"
           }
         },
         "item_tGNj9C": {
@@ -524,9 +516,8 @@
         }
       },
       "block_order": [
-        "item_W7xbec",
-        "item_XwrXPw",
         "item_eTPdBz",
+        "item_MRYLp8",
         "item_fNAQyD",
         "item_tGNj9C",
         "item_tDcct8"
