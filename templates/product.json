@@ -418,21 +418,21 @@
           "type": "item",
           "settings": {
             "title": "Comment puis-je suivre ma commande ?",
-            "content": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.</p>"
+            "content": "<p><strong>Pour vérifier le statut de livraison de votre commande, veuillez consulter l'e-mail de confirmation d'expédition que vous avez reçu.</strong></p><p><strong>Pour chaque colis expédié, vous recevrez un e-mail de confirmation qui comprend un lien de suivi.</strong></p><p><strong>Cet e-mail sera envoyé dès que votre commande aura été traitée et expédiée. Utilisez le lien de suivi pour suivre votre colis en temps réel.</strong></p>"
           }
         },
         "item_wyw9wt": {
           "type": "item",
           "settings": {
             "title": "Comment demander un retour ?",
-            "content": "<p>You can contact us through our contact page! We will be happy to assist you.</p>"
+            "content": "<p><strong>Si votre commande est éligible à un retour, veuillez suivre les étapes suivantes pour démarrer le processus :</strong></p><ul><li><strong>Envoyez un e-mail via la section \"Contact\" de notre site web.</strong></li><li><strong>Dans cet e-mail, veuillez fournir les informations suivantes :Numéro de commandeRaison du retourPhoto du produit (s'il est endommagé)Nom et prénom du clientAdresse du client</strong></li></ul><p><strong>Nous vous contacterons ensuite pour vous fournir l'adresse de retour.</strong></p>"
           }
         },
         "item_DbLPnM": {
           "type": "item",
           "settings": {
             "title": "Comment recevoir mon remboursement ?",
-            "content": "<p>fcf </p>"
+            "content": "<p><strong>Le remboursement sera toujours effectué via le mode de paiement que vous avez utilisé.</strong></p><p><strong>Si vous avez payé par carte de crédit, le montant des articles retournés sera remboursé directement sur votre carte de crédit.</strong></p>"
           }
         }
       },
