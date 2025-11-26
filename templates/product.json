@@ -383,6 +383,7 @@
         "slide_xtrrHP": {
           "type": "slide",
           "settings": {
+            "image": "shopify://shop_images/images.jpg",
             "navigation_label": "Fabriqué à la main",
             "subheading": "",
             "title": "Fabriqué à la main",
