@@ -197,7 +197,7 @@
           "type": "collection",
           "settings": {
             "collection": "bottes",
-            "image": "shopify://shop_images/S415751b5e5044f34b5d2deb7d6e4a9adD_dd238c2c-d3e7-48fa-8ec5-d4008d8afb4a.webp",
+            "image": "shopify://shop_images/boots-on-blue.jpg",
             "subheading": "",
             "title": "",
             "url": "",
@@ -207,6 +207,20 @@
             "overlay_color": "#000000",
             "overlay_opacity": 31
           }
+        },
+        "collection_6TNNxH": {
+          "type": "collection",
+          "settings": {
+            "collection": "bijoux",
+            "subheading": "",
+            "title": "",
+            "url": "",
+            "heading_tag": "h2",
+            "text_position": "place-self-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
         }
       },
       "block_order": [
@@ -214,7 +228,8 @@
         "collection_bQ9Fnt",
         "collection_bTzwTV",
         "collection_wAmY68",
-        "collection_n4PMiV"
+        "collection_n4PMiV",
+        "collection_6TNNxH"
       ],
       "name": "Collection list",
       "settings": {
