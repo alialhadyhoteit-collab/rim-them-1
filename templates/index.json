@@ -151,7 +151,8 @@
         "collection_wAmY68": {
           "type": "collection",
           "settings": {
-            "collection": "pantalons",
+            "collection": "chemises",
+            "image": "shopify://shop_images/chemises.png",
             "subheading": "",
             "title": "",
             "url": "",
