@@ -507,23 +507,13 @@
             "author_date": "Marc H.",
             "author_image": "shopify://shop_images/other-one.png"
           }
-        },
-        "item_tDcct8": {
-          "type": "item",
-          "settings": {
-            "stars_count": 5,
-            "heading": "I love it! 😍",
-            "text": "I was initially hesitant to switch from my usual brand to this new one, but I'm so glad I did! This product has exceeded my expectations. It's not only affordable but also incredibly efficient. The quality is top-notch, and it's user-friendly.",
-            "author_date": "Cathrine"
-          }
         }
       },
       "block_order": [
         "item_eTPdBz",
         "item_MRYLp8",
         "item_fNAQyD",
-        "item_tGNj9C",
-        "item_tDcct8"
+        "item_tGNj9C"
       ],
       "name": "SS - Testimonial #16",
       "settings": {
@@ -604,7 +594,7 @@
         "card_author_date_text_height": 130,
         "card_author_date_text_mt": 16,
         "card_author_date_text_mt_mobile": 16,
-        "button": "View All",
+        "button": "",
         "button_url": "",
         "button_custom": false,
         "button_font": "josefin_sans_n4",
