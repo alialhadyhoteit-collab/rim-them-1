@@ -404,6 +404,67 @@
         "text_color": ""
       }
     },
+    "faq_9TRbPH": {
+      "type": "faq",
+      "blocks": {
+        "item_WdDUKD": {
+          "type": "item",
+          "settings": {
+            "title": "Quel est le délai de livraison ?",
+            "content": "<p>Nous livrons habituellement les articles en stock dans un délai de 6 à 9 jours<br/></p>"
+          }
+        },
+        "item_TRQaMp": {
+          "type": "item",
+          "settings": {
+            "title": "Comment puis-je suivre ma commande ?",
+            "content": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.</p>"
+          }
+        },
+        "item_wyw9wt": {
+          "type": "item",
+          "settings": {
+            "title": "Comment demander un retour ?",
+            "content": "<p>You can contact us through our contact page! We will be happy to assist you.</p>"
+          }
+        },
+        "item_DbLPnM": {
+          "type": "item",
+          "settings": {
+            "title": "Comment recevoir mon remboursement ?",
+            "content": "<p>fcf </p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_WdDUKD",
+        "item_TRQaMp",
+        "item_wyw9wt",
+        "item_DbLPnM"
+      ],
+      "name": "FAQ",
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Foire aux questions",
+        "content": "",
+        "team_avatar_width": 160,
+        "support_hours": "",
+        "answer_time": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
     "1763926383e0157ea8": {
       "type": "apps",
       "settings": {
@@ -422,6 +483,7 @@
     "11_hFJdiM",
     "ss_scrolling_images_gQwCgy",
     "timeline_WA3dRw",
+    "faq_9TRbPH",
     "1763926383e0157ea8"
   ]
 }
