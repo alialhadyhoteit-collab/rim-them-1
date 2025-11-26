@@ -463,6 +463,69 @@
         "text_color": ""
       }
     },
+    "11_n8qAGa": {
+      "type": "11",
+      "blocks": {
+        "image_EWPWEM": {
+          "type": "Image",
+          "settings": {
+            "review_icon": "shopify://shop_images/face-of-belgum-women.png",
+            "review_text": "Sophie B .Qualité et Style ImpeccablesJ'ai commandé une blouse et un pantalon de la collection femme, et la qualité est bluffante. Les coupes sont modernes et le tissu est très agréable à porter. De Zwan est définitivement ma nouvelle adresse mode !",
+            "review_rating": 5
+          }
+        },
+        "image_NiMey7": {
+          "type": "Image",
+          "settings": {
+            "review_icon": "shopify://shop_images/face-belguim-men.png",
+            "review_text": "Lucas M. Le détail qui fait la différenceJ'étais à la recherche d'une nouvelle ceinture en cuir et d'un portefeuille pour homme. Les accessoires de De Zwan sont non seulement superbes, mais respirent la solidité. Livraison rapide et le packaging était soigné",
+            "review_rating": 4.6
+          }
+        },
+        "image_AXha96": {
+          "type": "Image",
+          "settings": {
+            "review_icon": "shopify://shop_images/belguim-women-old.png",
+            "review_text": "Camille D. Des Bijoux UniquesLes bijoux fantaisie de De Zwan sont un vrai coup de cœur. J'ai pris des boucles d'oreilles pendantes et un bracelet. Ils sont originaux et apportent une touche d'éclat à toutes mes tenues. Parfait pour se faire plaisir",
+            "review_rating": 4.5
+          }
+        },
+        "image_39VBxq": {
+          "type": "Image",
+          "settings": {
+            "review_icon": "shopify://shop_images/man-in-blue-jacket.jpg",
+            "review_text": "Hugo V.                                                           Jamais Déçu !Je ne compte plus mes achats chez De Zwan. Que ce soit pour un pull, une paire de chaussettes ou un sac de voyage, la qualité est constante. La meilleure boutique en ligne pour s'habiller avec goût.",
+            "review_rating": 4.7
+          }
+        }
+      },
+      "block_order": [
+        "image_EWPWEM",
+        "image_NiMey7",
+        "image_AXha96",
+        "image_39VBxq"
+      ],
+      "name": "SS - Glow Testimonial",
+      "settings": {
+        "animation_time": 12,
+        "loop_amount": 1,
+        "header_before_gradient": "Nos clients",
+        "header_gradient": "adorent",
+        "header": "notre boutique",
+        "header_color": "#0b1128",
+        "header_font_size": 42,
+        "header_mob_font_size": 28,
+        "review_font_size": 13,
+        "review_font_color": "#0b1128",
+        "gradient_color_1": "#4222de",
+        "gradient_color_2": "#659bff",
+        "gradient_color_3": "#7ff6e8",
+        "blur_color": "#b8b1dc",
+        "background-color": "#ffffff",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "custom_html_tjgdM9": {
       "type": "custom-html",
       "name": "Custom HTML",
@@ -487,6 +550,7 @@
     "rich_text_Jq6N46",
     "custom_html_AUHKjh",
     "rich_text_LwjmXW",
+    "11_n8qAGa",
     "custom_html_tjgdM9"
   ]
 }
