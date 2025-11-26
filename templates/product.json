@@ -198,142 +198,48 @@
     "11_hFJdiM": {
       "type": "11",
       "blocks": {
-        "image_rLAP6a": {
+        "image_DhWTpB": {
           "type": "Image",
           "settings": {
-            "review_icon": "shopify://shop_images/Blue_44.jpg",
-            "review_text": "Add awesome customer testimonial right here",
-            "review_rating": 4.7
-          }
-        },
-        "image_QwiwAk": {
-          "type": "Image",
-          "settings": {
-            "review_text": "Add awesome customer testimonial right here",
+            "review_icon": "shopify://shop_images/face-of-belgum-women.png",
+            "review_text": "Sophie B .Qualité et Style ImpeccablesJ'ai commandé une blouse et un pantalon de la collection femme, et la qualité est bluffante. Les coupes sont modernes et le tissu est très agréable à porter. De Zwan est définitivement ma nouvelle adresse mode !",
             "review_rating": 5
           }
         },
-        "image_c9yK3L": {
+        "image_PJGiBh": {
           "type": "Image",
           "settings": {
-            "review_text": "Add awesome customer testimonial right here",
-            "review_rating": 5
-          }
-        },
-        "image_f3EyaB": {
-          "type": "Image",
-          "settings": {
-            "review_text": "Add awesome customer testimonial right here",
-            "review_rating": 5
-          }
-        },
-        "image_maQH7r": {
-          "type": "Image",
-          "settings": {
-            "review_text": "Add awesome customer testimonial right here",
-            "review_rating": 5
-          }
-        },
-        "image_jTQhhD": {
-          "type": "Image",
-          "settings": {
-            "review_text": "Add awesome customer testimonial right here",
-            "review_rating": 5
-          }
-        },
-        "image_mteRNb": {
-          "type": "Image",
-          "settings": {
-            "review_text": "Add awesome customer testimonial right here",
-            "review_rating": 5
-          }
-        },
-        "image_k8mzwU": {
-          "type": "Image",
-          "settings": {
-            "review_text": "Add awesome customer testimonial right here",
-            "review_rating": 5
-          }
-        },
-        "image_Yt6NiB": {
-          "type": "Image",
-          "settings": {
-            "review_text": "Add awesome customer testimonial right here",
-            "review_rating": 5
-          }
-        },
-        "image_ad3eTx": {
-          "type": "Image",
-          "settings": {
-            "review_text": "Add awesome customer testimonial right here",
-            "review_rating": 5
-          }
-        },
-        "image_tQRTdh": {
-          "type": "Image",
-          "settings": {
-            "review_text": "Add awesome customer testimonial right here",
-            "review_rating": 5
-          }
-        },
-        "image_rnnWUG": {
-          "type": "Image",
-          "settings": {
-            "review_text": "Add awesome customer testimonial right here",
-            "review_rating": 5
-          }
-        },
-        "image_pFRgWt": {
-          "type": "Image",
-          "settings": {
-            "review_text": "Add awesome customer testimonial right here",
-            "review_rating": 5
-          }
-        },
-        "image_RyU3PV": {
-          "type": "Image",
-          "settings": {
-            "review_text": "Add awesome customer testimonial right here",
-            "review_rating": 5
+            "review_icon": "shopify://shop_images/face-belguim-men.png",
+            "review_text": "Lucas M. Le détail qui fait la différenceJ'étais à la recherche d'une nouvelle ceinture en cuir et d'un portefeuille pour homme. Les accessoires de De Zwan sont non seulement superbes, mais respirent la solidité. Livraison rapide et le packaging était soigné",
+            "review_rating": 4.6
           }
         },
         "image_JzDR3U": {
           "type": "Image",
           "settings": {
-            "review_text": "Add awesome customer testimonial right here",
-            "review_rating": 5
+            "review_icon": "shopify://shop_images/belguim-women-old.png",
+            "review_text": "Camille D. Des Bijoux UniquesLes bijoux fantaisie de De Zwan sont un vrai coup de cœur. J'ai pris des boucles d'oreilles pendantes et un bracelet. Ils sont originaux et apportent une touche d'éclat à toutes mes tenues. Parfait pour se faire plaisir",
+            "review_rating": 4.5
           }
         },
         "image_VgGfkn": {
           "type": "Image",
           "settings": {
             "review_text": "Hugo V.                                                           Jamais Déçu !Je ne compte plus mes achats chez De Zwan. Que ce soit pour un pull, une paire de chaussettes ou un sac de voyage, la qualité est constante. La meilleure boutique en ligne pour s'habiller avec goût.",
-            "review_rating": 5
+            "review_rating": 4.7
           }
         }
       },
       "block_order": [
-        "image_rLAP6a",
-        "image_QwiwAk",
-        "image_c9yK3L",
-        "image_f3EyaB",
-        "image_maQH7r",
-        "image_jTQhhD",
-        "image_mteRNb",
-        "image_k8mzwU",
-        "image_Yt6NiB",
-        "image_ad3eTx",
-        "image_tQRTdh",
-        "image_rnnWUG",
-        "image_pFRgWt",
-        "image_RyU3PV",
+        "image_DhWTpB",
+        "image_PJGiBh",
         "image_JzDR3U",
         "image_VgGfkn"
       ],
       "name": "SS - Glow Testimonial",
       "settings": {
-        "animation_time": 30,
-        "loop_amount": 2,
+        "animation_time": 12,
+        "loop_amount": 1,
         "header_before_gradient": "Our customers",
         "header_gradient": "love",
         "header": "the product",
