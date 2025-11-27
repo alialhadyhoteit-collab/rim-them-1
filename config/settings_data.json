@@ -49,6 +49,7 @@
     "show_page_transition": false,
     "heading_apparition": "split_fade",
     "color_swatch_style": "square",
+    "color_swatch_config": "Noir : #000000\nBlanc : #FFFFFF\nGris Clair : #D3D3D3\nGris Anthracite : #36454F\nBleu Marine : #000080\nBeige : #F5F5DC\nCrème : #FFFDD0\nIvoire : #FFFFF0\nMarron : #804000\nOr : #FFD700\nArgent : #C0C0C0\nRouge : #FF0000\nÉcarlate : #FF2400\nBordeaux : #800020\nCerise : #DE3163\nGrenat : #800000\nCorail : #FF7F50\nRose : #FFC0CB\nFuchsia : #FF00FF\nRose Poudré : #FADADD\nFramboise : #E30B5D\nBleu : #0000FF\nBleu Ciel : #87CEEB\nTurquoise : #40E0D0\nIndigo : #4B0082\nOutremer : #120A8F\nBleu Canard : #008080\nCéladon : #ACE1AF\nAzurin : #0080FF\nVert : #008000\nÉmeraude : #50C878\nKaki : #C3B091\nOlive : #808000\nMenthe : #98FF98\nPomme : #8DB600\nLichen : #86A186\nJaune : #FFFF00\nCitron : #FFF44F\nMoutarde : #FFDB58\nOcre : #CC7722\nOrange : #FFA500\nSafran : #F4C430\nPêche : #FFE5B4\nAmbre : #FFBF00\nViolet : #800080\nPrune : #660066\nLavande : #E6E6FA\nTaupe : #483C32\nCaramel : #C68A59\nRouille : #B7410E",
     "show_quick_buy": false,
     "show_product_rating": false,
     "show_discount": true,
@@ -71,13 +72,6 @@
           "mf_display_style": "0",
           "mf_drawer_position": "1",
           "custom_css": "/* Just insert css here */"
-        }
-      },
-      "4571859552318407796": {
-        "type": "shopify://apps/globo-color-swatch/blocks/app-embed-block/4394f710-096c-4021-bbde-8ebb26057c11",
-        "disabled": false,
-        "settings": {
-          "customCssGCW": ""
         }
       }
     }
