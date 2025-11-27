@@ -105,7 +105,7 @@
           "type": "card",
           "settings": {
             "tag": "",
-            "heading": "",
+            "heading": "<h1>Black Friday</h1>",
             "text": "",
             "image": "shopify://shop_images/valeria.png",
             "url": "shopify://products/valeria",
