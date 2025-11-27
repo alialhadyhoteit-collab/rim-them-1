@@ -108,8 +108,23 @@
             "heading": "<h1>Black Friday</h1>",
             "text": "",
             "image": "shopify://shop_images/valeria.png",
-            "url": "shopify://products/valeria",
+            "url": "shopify://collections/black-friday",
             "card_bg_color": "#FFFFFF",
+            "card_border_color": "#000000",
+            "tag_color": "#6e6e73",
+            "heading_color": "#1d1d1f",
+            "text_color": "#1d1d1f",
+            "image_border_color": "#000000"
+          }
+        },
+        "card_nFAHqJ": {
+          "type": "card",
+          "settings": {
+            "tag": "",
+            "heading": "<h1>Femmes</h1>",
+            "text": "",
+            "url": "shopify://collections/femme",
+            "card_bg_color": "#ffffff",
             "card_border_color": "#000000",
             "tag_color": "#6e6e73",
             "heading_color": "#1d1d1f",
@@ -180,6 +195,7 @@
       },
       "block_order": [
         "card_HiEFN8",
+        "card_nFAHqJ",
         "card_B7WFne",
         "card_DJfczJ",
         "card_aa3Ry7",
