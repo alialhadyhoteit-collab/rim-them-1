@@ -133,57 +133,13 @@
             "image_border_color": "#000000"
           }
         },
-        "card_B7WFne": {
-          "type": "card",
-          "settings": {
-            "tag": "NEW",
-            "heading": "<h3>Card Heading</h3>",
-            "text": "<p>Card Text</p>",
-            "url": "",
-            "card_bg_color": "#FFFFFF",
-            "card_border_color": "#000000",
-            "tag_color": "#6e6e73",
-            "heading_color": "#1d1d1f",
-            "text_color": "#1d1d1f",
-            "image_border_color": "#000000"
-          }
-        },
-        "card_DJfczJ": {
-          "type": "card",
-          "settings": {
-            "tag": "NEW",
-            "heading": "<h3>Card Heading</h3>",
-            "text": "<p>Card Text</p>",
-            "url": "",
-            "card_bg_color": "#FFFFFF",
-            "card_border_color": "#000000",
-            "tag_color": "#6e6e73",
-            "heading_color": "#1d1d1f",
-            "text_color": "#1d1d1f",
-            "image_border_color": "#000000"
-          }
-        },
-        "card_aa3Ry7": {
-          "type": "card",
-          "settings": {
-            "tag": "NEW",
-            "heading": "<h3>Card Heading</h3>",
-            "text": "<p>Card Text</p>",
-            "url": "",
-            "card_bg_color": "#FFFFFF",
-            "card_border_color": "#000000",
-            "tag_color": "#6e6e73",
-            "heading_color": "#1d1d1f",
-            "text_color": "#1d1d1f",
-            "image_border_color": "#000000"
-          }
-        },
         "card_mPUA8H": {
           "type": "card",
           "settings": {
-            "tag": "NEW",
-            "heading": "<h3>Card Heading</h3>",
-            "text": "<p>Card Text</p>",
+            "tag": "",
+            "heading": "<h1>Hommes</h1>",
+            "text": "",
+            "image": "shopify://shop_images/hommes.png",
             "url": "",
             "card_bg_color": "#FFFFFF",
             "card_border_color": "#000000",
@@ -197,9 +153,6 @@
       "block_order": [
         "card_HiEFN8",
         "card_nFAHqJ",
-        "card_B7WFne",
-        "card_DJfczJ",
-        "card_aa3Ry7",
         "card_mPUA8H"
       ],
       "name": "SS - Slider #7",
