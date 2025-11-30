@@ -101,6 +101,22 @@
     "71_6E8Ymy": {
       "type": "71",
       "blocks": {
+        "card_hJhTHH": {
+          "type": "card",
+          "settings": {
+            "tag": "",
+            "heading": "<h4>lampes-animaux</h4>",
+            "text": "",
+            "image": "shopify://shop_images/0wdqfi7i_7fa18000-226d-44d4-96df-475c77ce1455.webp",
+            "url": "shopify://collections/lampes-animaux",
+            "card_bg_color": "#ffffff",
+            "card_border_color": "#000000",
+            "tag_color": "#6e6e73",
+            "heading_color": "#1d1d1f",
+            "text_color": "#1d1d1f",
+            "image_border_color": "#000000"
+          }
+        },
         "card_HiEFN8": {
           "type": "card",
           "settings": {
@@ -151,6 +167,7 @@
         }
       },
       "block_order": [
+        "card_hJhTHH",
         "card_HiEFN8",
         "card_nFAHqJ",
         "card_mPUA8H"
