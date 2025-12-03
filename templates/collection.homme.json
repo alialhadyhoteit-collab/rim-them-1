@@ -31,7 +31,6 @@
     },
     "main": {
       "type": "main-collection",
-      "disabled": true,
       "custom_css": [
         ".product-list img {background-color: #f7f7f7; /* Remplacez #f0f0f0 par la couleur de fond souhaitée */}"
       ],
