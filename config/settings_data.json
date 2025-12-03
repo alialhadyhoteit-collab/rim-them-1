@@ -61,20 +61,6 @@
     "checkout_button_color": "#1a1a1a",
     "content_for_index": [],
     "blocks": {
-      "12075128526103414267": {
-        "type": "shopify://apps/bundlex/blocks/volume-discount-embed/c017a4b2-071a-4809-a2c2-1c5768f46bb9",
-        "disabled": false,
-        "settings": {
-          "hide_quantity": false,
-          "custom_placement_selector": "",
-          "add_to_cart_button_selector": "",
-          "quantity_container_selector": "",
-          "quantity_input_selector": "",
-          "variants_container_selector": "",
-          "product_form_selector": "",
-          "custom_css": ""
-        }
-      },
       "10402225390556238428": {
         "type": "shopify://apps/magefan-size-chart/blocks/size_chart_button/94351537-34e9-4bae-96b1-c1f26b180c07",
         "disabled": true,
@@ -92,6 +78,20 @@
         "type": "shopify://apps/variant-image-wizard-swatch/blocks/app-embed/66205c03-f474-4e2c-b275-0a2806eeac16",
         "disabled": false,
         "settings": {}
+      },
+      "12075128526103414267": {
+        "type": "shopify://apps/bundlex/blocks/volume-discount-embed/c017a4b2-071a-4809-a2c2-1c5768f46bb9",
+        "disabled": true,
+        "settings": {
+          "hide_quantity": false,
+          "custom_placement_selector": "",
+          "add_to_cart_button_selector": "",
+          "quantity_container_selector": "",
+          "quantity_input_selector": "",
+          "variants_container_selector": "",
+          "product_form_selector": "",
+          "custom_css": ""
+        }
       }
     }
   },
