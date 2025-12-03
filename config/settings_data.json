@@ -61,19 +61,6 @@
     "checkout_button_color": "#1a1a1a",
     "content_for_index": [],
     "blocks": {
-      "10402225390556238428": {
-        "type": "shopify://apps/magefan-size-chart/blocks/size_chart_button/94351537-34e9-4bae-96b1-c1f26b180c07",
-        "disabled": false,
-        "settings": {
-          "mf_button_label": "Size Chart",
-          "mf_link_button_type": "mfSizeChartBtn",
-          "mf_placement": "mfFixed",
-          "mf_button_position": "right",
-          "mf_display_style": "0",
-          "mf_drawer_position": "1",
-          "custom_css": "/* Just insert css here */"
-        }
-      },
       "12075128526103414267": {
         "type": "shopify://apps/bundlex/blocks/volume-discount-embed/c017a4b2-071a-4809-a2c2-1c5768f46bb9",
         "disabled": false,
@@ -86,6 +73,19 @@
           "variants_container_selector": "",
           "product_form_selector": "",
           "custom_css": ""
+        }
+      },
+      "10402225390556238428": {
+        "type": "shopify://apps/magefan-size-chart/blocks/size_chart_button/94351537-34e9-4bae-96b1-c1f26b180c07",
+        "disabled": true,
+        "settings": {
+          "mf_button_label": "Size Chart",
+          "mf_link_button_type": "mfSizeChartBtn",
+          "mf_placement": "mfFixed",
+          "mf_button_position": "right",
+          "mf_display_style": "0",
+          "mf_drawer_position": "1",
+          "custom_css": "/* Just insert css here */"
         }
       }
     }
