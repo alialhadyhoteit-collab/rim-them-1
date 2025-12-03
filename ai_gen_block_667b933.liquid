@@ -1,0 +1,309 @@
+{% doc %}
+  @prompt
+    text sliding up full edit 
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-text-slide-up-{{ ai_gen_id }} {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    padding: {{ block.settings.padding_vertical }}px {{ block.settings.padding_horizontal }}px;
+    background-color: {{ block.settings.background_color }};
+    border-radius: {{ block.settings.border_radius }}px;
+  }
+
+  .ai-text-slide-up-wrapper-{{ ai_gen_id }} {
+    position: relative;
+    overflow: hidden;
+    height: {{ block.settings.text_size }}px;
+  }
+
+  .ai-text-slide-up-item-{{ ai_gen_id }} {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    font-size: {{ block.settings.text_size }}px;
+    font-weight: {{ block.settings.font_weight }};
+    color: {{ block.settings.text_color }};
+    text-align: {{ block.settings.text_alignment }};
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  .ai-text-slide-up-item-{{ ai_gen_id }}.active {
+    animation: ai-slide-up-{{ ai_gen_id }} {{ block.settings.animation_duration }}s ease-in-out;
+  }
+
+  @keyframes ai-slide-up-{{ ai_gen_id }} {
+    0% {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    10% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    90% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-text-slide-up-{{ ai_gen_id }} {
+      padding: {{ block.settings.padding_vertical | times: 0.7 }}px {{ block.settings.padding_horizontal | times: 0.7 }}px;
+    }
+
+    .ai-text-slide-up-wrapper-{{ ai_gen_id }} {
+      height: {{ block.settings.text_size | times: 0.8 }}px;
+    }
+
+    .ai-text-slide-up-item-{{ ai_gen_id }} {
+      font-size: {{ block.settings.text_size | times: 0.8 }}px;
+    }
+  }
+{% endstyle %}
+
+<text-slide-up-{{ ai_gen_id }}
+  class="ai-text-slide-up-{{ ai_gen_id }}"
+  data-duration="{{ block.settings.animation_duration }}"
+  {{ block.shopify_attributes }}
+>
+  <div class="ai-text-slide-up-wrapper-{{ ai_gen_id }}">
+    {% if block.settings.text_1 != blank %}
+      <div class="ai-text-slide-up-item-{{ ai_gen_id }}" data-index="0">
+        {{ block.settings.text_1 }}
+      </div>
+    {% endif %}
+    {% if block.settings.text_2 != blank %}
+      <div class="ai-text-slide-up-item-{{ ai_gen_id }}" data-index="1">
+        {{ block.settings.text_2 }}
+      </div>
+    {% endif %}
+    {% if block.settings.text_3 != blank %}
+      <div class="ai-text-slide-up-item-{{ ai_gen_id }}" data-index="2">
+        {{ block.settings.text_3 }}
+      </div>
+    {% endif %}
+    {% if block.settings.text_4 != blank %}
+      <div class="ai-text-slide-up-item-{{ ai_gen_id }}" data-index="3">
+        {{ block.settings.text_4 }}
+      </div>
+    {% endif %}
+    {% if block.settings.text_5 != blank %}
+      <div class="ai-text-slide-up-item-{{ ai_gen_id }}" data-index="4">
+        {{ block.settings.text_5 }}
+      </div>
+    {% endif %}
+  </div>
+</text-slide-up-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class TextSlideUp{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+        this.currentIndex = 0;
+        this.items = [];
+        this.duration = 0;
+      }
+
+      connectedCallback() {
+        this.items = Array.from(this.querySelectorAll('.ai-text-slide-up-item-{{ ai_gen_id }}'));
+        this.duration = parseFloat(this.dataset.duration) * 1000;
+
+        if (this.items.length > 0) {
+          this.startAnimation();
+        }
+      }
+
+      startAnimation() {
+        this.showItem(this.currentIndex);
+
+        setInterval(() => {
+          this.currentIndex = (this.currentIndex + 1) % this.items.length;
+          this.showItem(this.currentIndex);
+        }, this.duration);
+      }
+
+      showItem(index) {
+        this.items.forEach((item, i) => {
+          if (i === index) {
+            item.classList.add('active');
+            setTimeout(() => {
+              item.classList.remove('active');
+            }, this.duration);
+          }
+        });
+      }
+    }
+
+    customElements.define('text-slide-up-{{ ai_gen_id }}', TextSlideUp{{ ai_gen_id }});
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Text slide up",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Text content"
+    },
+    {
+      "type": "text",
+      "id": "text_1",
+      "label": "Text 1",
+      "default": "Welcome to our store"
+    },
+    {
+      "type": "text",
+      "id": "text_2",
+      "label": "Text 2",
+      "default": "Free shipping worldwide"
+    },
+    {
+      "type": "text",
+      "id": "text_3",
+      "label": "Text 3",
+      "default": "Shop the latest collection"
+    },
+    {
+      "type": "text",
+      "id": "text_4",
+      "label": "Text 4"
+    },
+    {
+      "type": "text",
+      "id": "text_5",
+      "label": "Text 5"
+    },
+    {
+      "type": "header",
+      "content": "Style"
+    },
+    {
+      "type": "range",
+      "id": "text_size",
+      "min": 12,
+      "max": 72,
+      "step": 2,
+      "unit": "px",
+      "label": "Text size",
+      "default": 24
+    },
+    {
+      "type": "select",
+      "id": "font_weight",
+      "label": "Font weight",
+      "options": [
+        {
+          "value": "400",
+          "label": "Normal"
+        },
+        {
+          "value": "500",
+          "label": "Medium"
+        },
+        {
+          "value": "600",
+          "label": "Semi bold"
+        },
+        {
+          "value": "700",
+          "label": "Bold"
+        }
+      ],
+      "default": "600"
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "Text alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "padding_vertical",
+      "min": 0,
+      "max": 50,
+      "step": 5,
+      "unit": "px",
+      "label": "Vertical padding",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "padding_horizontal",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Horizontal padding",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Border radius",
+      "default": 8
+    },
+    {
+      "type": "header",
+      "content": "Animation"
+    },
+    {
+      "type": "range",
+      "id": "animation_duration",
+      "min": 2,
+      "max": 10,
+      "step": 1,
+      "unit": "s",
+      "label": "Duration per text",
+      "default": 4
+    }
+  ],
+  "presets": [
+    {
+      "name": "Text slide up"
+    }
+  ]
+}
+{% endschema %}

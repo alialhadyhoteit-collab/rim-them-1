@@ -1,0 +1,485 @@
+{% doc %}
+  @prompt
+    Announcement bar sliding with full edit 
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-announcement-bar-{{ ai_gen_id }} {
+    background-color: {{ block.settings.background_color }};
+    color: {{ block.settings.text_color }};
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding: {{ block.settings.vertical_padding }}px 0;
+  }
+
+  .ai-announcement-bar-wrapper-{{ ai_gen_id }} {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .ai-announcement-bar-track-{{ ai_gen_id }} {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    will-change: transform;
+  }
+
+  .ai-announcement-bar-item-{{ ai_gen_id }} {
+    display: inline-flex;
+    align-items: center;
+    padding: 0 {{ block.settings.item_spacing }}px;
+    font-size: {{ block.settings.font_size }}px;
+    font-weight: {{ block.settings.font_weight }};
+    text-transform: {{ block.settings.text_transform }};
+  }
+
+  .ai-announcement-bar-item-{{ ai_gen_id }} a {
+    color: {{ block.settings.text_color }};
+    text-decoration: none;
+  }
+
+  .ai-announcement-bar-item-{{ ai_gen_id }} a:hover {
+    color: {{ block.settings.text_hover_color }};
+  }
+
+  .ai-announcement-bar-separator-{{ ai_gen_id }} {
+    display: inline-block;
+    margin: 0 {{ block.settings.separator_spacing }}px;
+    color: {{ block.settings.separator_color }};
+    font-size: {{ block.settings.separator_size }}px;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-announcement-bar-item-{{ ai_gen_id }} {
+      font-size: {{ block.settings.font_size_mobile }}px;
+    }
+  }
+{% endstyle %}
+
+<announcement-bar-{{ ai_gen_id }}
+  class="ai-announcement-bar-{{ ai_gen_id }}"
+  data-speed="{{ block.settings.scroll_speed }}"
+  data-direction="{{ block.settings.scroll_direction }}"
+  data-pause-on-hover="{{ block.settings.pause_on_hover }}"
+  {{ block.shopify_attributes }}
+>
+  <div class="ai-announcement-bar-wrapper-{{ ai_gen_id }}">
+    <div class="ai-announcement-bar-track-{{ ai_gen_id }}">
+      {% for i in (1..block.settings.repeat_count) %}
+        {% if block.settings.message_1 != blank %}
+          <div class="ai-announcement-bar-item-{{ ai_gen_id }}">
+            {% if block.settings.link_1 != blank %}
+              <a href="{{ block.settings.link_1 }}">{{ block.settings.message_1 }}</a>
+            {% else %}
+              {{ block.settings.message_1 }}
+            {% endif %}
+          </div>
+          {% if block.settings.show_separator %}
+            <span class="ai-announcement-bar-separator-{{ ai_gen_id }}">{{ block.settings.separator_symbol }}</span>
+          {% endif %}
+        {% endif %}
+
+        {% if block.settings.message_2 != blank %}
+          <div class="ai-announcement-bar-item-{{ ai_gen_id }}">
+            {% if block.settings.link_2 != blank %}
+              <a href="{{ block.settings.link_2 }}">{{ block.settings.message_2 }}</a>
+            {% else %}
+              {{ block.settings.message_2 }}
+            {% endif %}
+          </div>
+          {% if block.settings.show_separator %}
+            <span class="ai-announcement-bar-separator-{{ ai_gen_id }}">{{ block.settings.separator_symbol }}</span>
+          {% endif %}
+        {% endif %}
+
+        {% if block.settings.message_3 != blank %}
+          <div class="ai-announcement-bar-item-{{ ai_gen_id }}">
+            {% if block.settings.link_3 != blank %}
+              <a href="{{ block.settings.link_3 }}">{{ block.settings.message_3 }}</a>
+            {% else %}
+              {{ block.settings.message_3 }}
+            {% endif %}
+          </div>
+          {% if block.settings.show_separator %}
+            <span class="ai-announcement-bar-separator-{{ ai_gen_id }}">{{ block.settings.separator_symbol }}</span>
+          {% endif %}
+        {% endif %}
+
+        {% if block.settings.message_4 != blank %}
+          <div class="ai-announcement-bar-item-{{ ai_gen_id }}">
+            {% if block.settings.link_4 != blank %}
+              <a href="{{ block.settings.link_4 }}">{{ block.settings.message_4 }}</a>
+            {% else %}
+              {{ block.settings.message_4 }}
+            {% endif %}
+          </div>
+          {% if block.settings.show_separator %}
+            <span class="ai-announcement-bar-separator-{{ ai_gen_id }}">{{ block.settings.separator_symbol }}</span>
+          {% endif %}
+        {% endif %}
+
+        {% if block.settings.message_5 != blank %}
+          <div class="ai-announcement-bar-item-{{ ai_gen_id }}">
+            {% if block.settings.link_5 != blank %}
+              <a href="{{ block.settings.link_5 }}">{{ block.settings.message_5 }}</a>
+            {% else %}
+              {{ block.settings.message_5 }}
+            {% endif %}
+          </div>
+          {% if block.settings.show_separator and i < block.settings.repeat_count %}
+            <span class="ai-announcement-bar-separator-{{ ai_gen_id }}">{{ block.settings.separator_symbol }}</span>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</announcement-bar-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class AnnouncementBar{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+        this.track = this.querySelector('.ai-announcement-bar-track-{{ ai_gen_id }}');
+        this.speed = parseFloat(this.dataset.speed) || 50;
+        this.direction = this.dataset.direction || 'left';
+        this.pauseOnHover = this.dataset.pauseOnHover === 'true';
+        this.animationId = null;
+        this.isPaused = false;
+        this.position = 0;
+      }
+
+      connectedCallback() {
+        this.cloneContent();
+        this.startAnimation();
+        
+        if (this.pauseOnHover) {
+          this.addEventListener('mouseenter', () => this.pause());
+          this.addEventListener('mouseleave', () => this.resume());
+        }
+      }
+
+      cloneContent() {
+        const clone = this.track.cloneNode(true);
+        this.track.parentElement.appendChild(clone);
+      }
+
+      startAnimation() {
+        const animate = () => {
+          if (!this.isPaused) {
+            if (this.direction === 'left') {
+              this.position -= this.speed / 60;
+            } else {
+              this.position += this.speed / 60;
+            }
+
+            const trackWidth = this.track.offsetWidth;
+
+            if (this.direction === 'left' && Math.abs(this.position) >= trackWidth) {
+              this.position = 0;
+            } else if (this.direction === 'right' && this.position >= trackWidth) {
+              this.position = 0;
+            }
+
+            const tracks = this.querySelectorAll('.ai-announcement-bar-track-{{ ai_gen_id }}');
+            tracks.forEach(track => {
+              track.style.transform = `translateX(${this.position}px)`;
+            });
+          }
+
+          this.animationId = requestAnimationFrame(animate);
+        };
+
+        this.animationId = requestAnimationFrame(animate);
+      }
+
+      pause() {
+        this.isPaused = true;
+      }
+
+      resume() {
+        this.isPaused = false;
+      }
+
+      disconnectedCallback() {
+        if (this.animationId) {
+          cancelAnimationFrame(this.animationId);
+        }
+      }
+    }
+
+    customElements.define('announcement-bar-{{ ai_gen_id }}', AnnouncementBar{{ ai_gen_id }});
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Announcement bar sliding",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Messages"
+    },
+    {
+      "type": "text",
+      "id": "message_1",
+      "label": "Message 1",
+      "default": "Free shipping on orders over £50"
+    },
+    {
+      "type": "url",
+      "id": "link_1",
+      "label": "Link 1"
+    },
+    {
+      "type": "text",
+      "id": "message_2",
+      "label": "Message 2",
+      "default": "New arrivals just landed"
+    },
+    {
+      "type": "url",
+      "id": "link_2",
+      "label": "Link 2"
+    },
+    {
+      "type": "text",
+      "id": "message_3",
+      "label": "Message 3",
+      "default": "Shop now and save 20%"
+    },
+    {
+      "type": "url",
+      "id": "link_3",
+      "label": "Link 3"
+    },
+    {
+      "type": "text",
+      "id": "message_4",
+      "label": "Message 4"
+    },
+    {
+      "type": "url",
+      "id": "link_4",
+      "label": "Link 4"
+    },
+    {
+      "type": "text",
+      "id": "message_5",
+      "label": "Message 5"
+    },
+    {
+      "type": "url",
+      "id": "link_5",
+      "label": "Link 5"
+    },
+    {
+      "type": "header",
+      "content": "Animation"
+    },
+    {
+      "type": "range",
+      "id": "scroll_speed",
+      "min": 10,
+      "max": 200,
+      "step": 10,
+      "unit": "px",
+      "label": "Scroll speed",
+      "default": 50
+    },
+    {
+      "type": "select",
+      "id": "scroll_direction",
+      "label": "Scroll direction",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "checkbox",
+      "id": "pause_on_hover",
+      "label": "Pause on hover",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "repeat_count",
+      "min": 2,
+      "max": 10,
+      "step": 1,
+      "label": "Repeat count",
+      "default": 3
+    },
+    {
+      "type": "header",
+      "content": "Separator"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_separator",
+      "label": "Show separator",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "separator_symbol",
+      "label": "Separator symbol",
+      "default": "•"
+    },
+    {
+      "type": "range",
+      "id": "separator_size",
+      "min": 8,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "label": "Separator size",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "separator_spacing",
+      "min": 10,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Separator spacing",
+      "default": 30
+    },
+    {
+      "type": "color",
+      "id": "separator_color",
+      "label": "Separator color",
+      "default": "#000000"
+    },
+    {
+      "type": "header",
+      "content": "Style"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "text_hover_color",
+      "label": "Text hover color",
+      "default": "#cccccc"
+    },
+    {
+      "type": "range",
+      "id": "font_size",
+      "min": 10,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Font size",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "font_size_mobile",
+      "min": 10,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "label": "Font size mobile",
+      "default": 12
+    },
+    {
+      "type": "select",
+      "id": "font_weight",
+      "label": "Font weight",
+      "options": [
+        {
+          "value": "400",
+          "label": "Normal"
+        },
+        {
+          "value": "500",
+          "label": "Medium"
+        },
+        {
+          "value": "600",
+          "label": "Semi bold"
+        },
+        {
+          "value": "700",
+          "label": "Bold"
+        }
+      ],
+      "default": "400"
+    },
+    {
+      "type": "select",
+      "id": "text_transform",
+      "label": "Text transform",
+      "options": [
+        {
+          "value": "none",
+          "label": "None"
+        },
+        {
+          "value": "uppercase",
+          "label": "Uppercase"
+        },
+        {
+          "value": "lowercase",
+          "label": "Lowercase"
+        },
+        {
+          "value": "capitalize",
+          "label": "Capitalize"
+        }
+      ],
+      "default": "none"
+    },
+    {
+      "type": "range",
+      "id": "vertical_padding",
+      "min": 5,
+      "max": 40,
+      "step": 5,
+      "unit": "px",
+      "label": "Vertical padding",
+      "default": 15
+    },
+    {
+      "type": "range",
+      "id": "item_spacing",
+      "min": 10,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Item spacing",
+      "default": 20
+    }
+  ],
+  "presets": [
+    {
+      "name": "Announcement bar sliding"
+    }
+  ]
+}
+{% endschema %}

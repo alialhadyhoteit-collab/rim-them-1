@@ -1,0 +1,275 @@
+{% doc %}
+  @prompt
+    sliding up text full edit and the background tranparent 
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-slide-up-text-{{ ai_gen_id }} {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    padding: {{ block.settings.padding_vertical }}px {{ block.settings.padding_horizontal }}px;
+    background-color: {{ block.settings.background_color }};
+    border-radius: {{ block.settings.border_radius }}px;
+  }
+
+  .ai-slide-up-text__content-{{ ai_gen_id }} {
+    display: block;
+    color: {{ block.settings.text_color }};
+    font-size: {{ block.settings.font_size }}px;
+    font-weight: {{ block.settings.font_weight }};
+    text-align: {{ block.settings.text_alignment }};
+    line-height: 1.4;
+  }
+
+  .ai-slide-up-text__word-{{ ai_gen_id }} {
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: bottom;
+    margin-right: 0.3em;
+  }
+
+  .ai-slide-up-text__word-{{ ai_gen_id }}:last-child {
+    margin-right: 0;
+  }
+
+  .ai-slide-up-text__inner-{{ ai_gen_id }} {
+    display: inline-block;
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  .ai-slide-up-text-{{ ai_gen_id }}.ai-animated .ai-slide-up-text__inner-{{ ai_gen_id }} {
+    animation: ai-slide-up-{{ ai_gen_id }} {{ block.settings.animation_duration }}s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  }
+
+  @keyframes ai-slide-up-{{ ai_gen_id }} {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  {% if block.settings.auto_play %}
+    .ai-slide-up-text-{{ ai_gen_id }} .ai-slide-up-text__inner-{{ ai_gen_id }} {
+      animation: ai-slide-up-{{ ai_gen_id }} {{ block.settings.animation_duration }}s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+    }
+  {% endif %}
+{% endstyle %}
+
+<slide-up-text-{{ ai_gen_id }}
+  class="ai-slide-up-text-{{ ai_gen_id }} {% if block.settings.auto_play %}ai-animated{% endif %}"
+  data-stagger="{{ block.settings.stagger_delay }}"
+  data-auto-play="{{ block.settings.auto_play }}"
+  {{ block.shopify_attributes }}
+>
+  <div class="ai-slide-up-text__content-{{ ai_gen_id }}">
+    {% assign words = block.settings.text | split: ' ' %}
+    {% for word in words %}
+      <span class="ai-slide-up-text__word-{{ ai_gen_id }}">
+        <span
+          class="ai-slide-up-text__inner-{{ ai_gen_id }}"
+          style="animation-delay: {{ forloop.index0 | times: block.settings.stagger_delay }}s;"
+        >
+          {{ word }}
+        </span>
+      </span>
+    {% endfor %}
+  </div>
+</slide-up-text-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class SlideUpText{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+        this.autoPlay = this.dataset.autoPlay === 'true';
+      }
+
+      connectedCallback() {
+        if (!this.autoPlay) {
+          this.setupIntersectionObserver();
+        }
+      }
+
+      setupIntersectionObserver() {
+        const options = {
+          root: null,
+          rootMargin: '0px',
+          threshold: 0.2
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting && !this.classList.contains('ai-animated')) {
+              this.classList.add('ai-animated');
+              observer.unobserve(this);
+            }
+          });
+        }, options);
+
+        observer.observe(this);
+      }
+    }
+
+    customElements.define('slide-up-text-{{ ai_gen_id }}', SlideUpText{{ ai_gen_id }});
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Sliding up text",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "textarea",
+      "id": "text",
+      "label": "Text",
+      "default": "Welcome to our amazing store"
+    },
+    {
+      "type": "header",
+      "content": "Animation"
+    },
+    {
+      "type": "checkbox",
+      "id": "auto_play",
+      "label": "Auto play on load",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "animation_duration",
+      "min": 0.3,
+      "max": 2,
+      "step": 0.1,
+      "unit": "s",
+      "label": "Animation duration",
+      "default": 0.8
+    },
+    {
+      "type": "range",
+      "id": "stagger_delay",
+      "min": 0,
+      "max": 0.5,
+      "step": 0.1,
+      "unit": "s",
+      "label": "Stagger delay",
+      "default": 0.1
+    },
+    {
+      "type": "header",
+      "content": "Style"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "rgba(0,0,0,0)"
+    },
+    {
+      "type": "range",
+      "id": "font_size",
+      "min": 14,
+      "max": 120,
+      "step": 2,
+      "unit": "px",
+      "label": "Font size",
+      "default": 48
+    },
+    {
+      "type": "select",
+      "id": "font_weight",
+      "label": "Font weight",
+      "options": [
+        {
+          "value": "400",
+          "label": "Normal"
+        },
+        {
+          "value": "500",
+          "label": "Medium"
+        },
+        {
+          "value": "600",
+          "label": "Semi bold"
+        },
+        {
+          "value": "700",
+          "label": "Bold"
+        }
+      ],
+      "default": "700"
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "Text alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "range",
+      "id": "padding_vertical",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Vertical padding",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "padding_horizontal",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Horizontal padding",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Border radius",
+      "default": 0
+    }
+  ],
+  "presets": [
+    {
+      "name": "Sliding up text"
+    }
+  ]
+}
+{% endschema %}
