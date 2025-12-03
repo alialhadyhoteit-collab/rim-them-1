@@ -48,6 +48,15 @@
             "show_taxes_notice": false
           }
         },
+        "product_variations_WVqqqt": {
+          "type": "product_variations",
+          "settings": {
+            "option_name": "",
+            "option_value_metafield": "",
+            "products": [],
+            "selector_style": "variant_image"
+          }
+        },
         "magefan_size_chart_size_chart_link_U7x9f3": {
           "type": "shopify://apps/magefan-size-chart/blocks/size_chart_link/94351537-34e9-4bae-96b1-c1f26b180c07",
           "settings": {
@@ -99,6 +108,7 @@
         "liquid_hi6bwU",
         "liquid_kiegnW",
         "price_VDj6mT",
+        "product_variations_WVqqqt",
         "magefan_size_chart_size_chart_link_U7x9f3",
         "quantity_selector_DkbADf",
         "buy_buttons_RrVTnc",
