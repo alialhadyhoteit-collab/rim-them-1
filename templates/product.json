@@ -165,7 +165,7 @@
           "type": "item",
           "settings": {
             "title": "Livraison gratuite",
-            "content": "<p><strong>Nous offrons la livraison gratuite en Belgique grâce à notre partenaire de confiance, bpost. Vous pouvez facilement suivre votre colis grâce au numéro de suivi que vous recevrez.</strong><br/></p>"
+            "content": "<h6><em><strong>Nous offrons la livraison gratuite en France et en Belgique. Vous pouvez facilement suivre votre colis grâce au numéro de suivi que vous recevrez.</strong></em></h6>"
           }
         }
       },
