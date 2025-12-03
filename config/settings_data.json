@@ -98,7 +98,7 @@
         "disabled": false,
         "settings": {
           "alignment": "left",
-          "swatch_location": "After image",
+          "swatch_location": "After price",
           "switch_on_hover": true,
           "preselect_variant": false
         }
