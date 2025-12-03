@@ -156,7 +156,7 @@
             "heading": "<h1>Hommes</h1>",
             "text": "",
             "image": "shopify://shop_images/hommes.png",
-            "url": "",
+            "url": "shopify://collections/homme",
             "card_bg_color": "#ffffff",
             "card_border_color": "#000000",
             "tag_color": "#6e6e73",
