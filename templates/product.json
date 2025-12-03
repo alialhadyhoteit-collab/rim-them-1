@@ -61,13 +61,12 @@
         },
         "variant_picker_6K3Xpy": {
           "type": "variant_picker",
-          "disabled": true,
           "settings": {
             "hide_sold_out_variants": false,
             "stack_blocks": true,
             "selector_style": "block",
-            "swatch_selector_style": "none",
-            "variant_image_options": "",
+            "swatch_selector_style": "swatch",
+            "variant_image_options": "vert",
             "size_chart_page": ""
           }
         },
