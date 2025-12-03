@@ -27,13 +27,13 @@
         "liquid_BrgKg9": {
           "type": "liquid",
           "settings": {
-            "liquid": "<div style=\"display: flex; align-items: center; margin-bottom: 12px; font-family: Arial, sans-serif; font-size: 16px;\">\n    <span style=\"font-size: 20px; margin-right: 15px; flex-shrink: 0;\">\n        ✅\n    </span>\n    <span style=\"color: #333;\">\n        Livraison gratuite avec B-post\n    </span>\n</div>"
+            "liquid": "<div style=\"display: flex; align-items: center; margin-bottom: 12px; font-family: Arial, sans-serif; font-size: 16px;\">\n    <span style=\"font-size: 20px; margin-right: 15px; flex-shrink: 0;\">\n        🚚\n    </span>\n    <span style=\"color: #333;\">\n        Livraison gratuite en France et en Belgique\n    </span>\n</div>"
           }
         },
         "liquid_hi6bwU": {
           "type": "liquid",
           "settings": {
-            "liquid": "<div style=\"display: flex; align-items: center; margin-bottom: 12px; font-family: Arial, sans-serif; font-size: 16px;\">\n    <div style=\"width: 30px; height: 30px; margin-right: 15px; flex-shrink: 0; display: flex; justify-content: center; align-items: center;\">\n        <img \n            src=\"https://img.icons8.com/material-outlined/30/000000/return.png\" \n            alt=\"Garantie 30 Jours\" \n            style=\"width: 100%; height: 100%; object-fit: contain;\"\n        >\n    </div>\n    <span style=\"color: #333;\">\n        Garantie de remboursement de 30 jours\n    </span>\n</div>"
+            "liquid": "<div style=\"display: flex; align-items: center; margin-bottom: 12px; font-family: Arial, sans-serif; font-size: 16px;\">\n    <span style=\"font-size: 20px; margin-right: 15px; flex-shrink: 0;\">\n        ⟳\n    </span>\n    <span style=\"color: #333;\">\n        Garantie de remboursement de 30 jour \n    </span>\n</div>"
           }
         },
         "liquid_kiegnW": {
