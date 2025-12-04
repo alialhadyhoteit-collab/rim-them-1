@@ -31,9 +31,9 @@
     "header_text_color": "#1a1a1a",
     "footer_background": "#1a1a1a",
     "footer_text_color": "#ffffff",
-    "primary_button_background": "#1a1a1a",
+    "primary_button_background": "#191919",
     "primary_button_text_color": "#ffffff",
-    "secondary_button_background": "#1a1a1a",
+    "secondary_button_background": "#000000",
     "secondary_button_text_color": "#ffffff",
     "product_card_background": "#ffffff",
     "product_card_text_color": "#1a1a1a",
@@ -207,11 +207,6 @@
     }
   },
   "platform_customizations": {
-    "custom_css": [
-      "/* --- MORE ROBUST PRICE SELECTORS (Alternative Method) --- *//* 1. Targets ALL prices (regular, sale, and collection card prices) */.price-item {font-size: 30px !important; /* Large size for all standard price elements */ font-weight: 700; /* Ensure high visibility */}",
-      "/* 2. Specific selector for the main price on the Product Page (the largest one) */.product__info-container .price-item {font-size: 36px !important; /* Make this price even bigger */ color: #000000; /* Ensure the main price is clearly visible */}",
-      "/* 3. Specific selector for Sale Prices (e.g., making the discounted price red) */.price-item--sale {color: #D32F2F !important; /* Custom color for the discounted price */}",
-      "/* 4. Tweak for the compare-at (original) price, ensuring it's smaller and crossed out */.price-item--regular:not(.price-item--sale) {font-size: 18px !important; /* Ensure the original price is noticeably smaller */ text-decoration: line-through; opacity: 0.6; /* Dim the original price */}"
-    ]
+    "custom_css": []
   }
 }
