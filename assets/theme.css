@@ -10073,3 +10073,17 @@ split-lines {
     );
     border: 1px solid #ccc;
 }
+/* Change the color of the **current price** when it's on sale (the new, lower price) */
+.price-item--sale {
+    color: #ff0000 !important; /* Red color for the sale price */
+}
+
+/* Change the color of the **compare-at price** (the original, strikethrough price) */
+.price-item--regular {
+    color: #0000ff !important; /* Blue color for the original price */
+}
+
+/* You may need a more specific selector depending on your theme */
+.price--on-sale .price-item--regular {
+    color: #0000ff !important; /* Blue color for the original price */
+}
