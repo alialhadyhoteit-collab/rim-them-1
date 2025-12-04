@@ -10092,6 +10092,6 @@ split-lines {
 
 /* Optionally, change the color of the Sale Badge itself */
 .badge--on-sale {
-    background-color:rgb(224, 0, 0) !important;
+    background-color:rgb(71, 224, 0) !important;
     color: #FFFFFF !important; 
 }
