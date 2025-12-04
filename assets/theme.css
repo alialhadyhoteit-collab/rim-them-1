@@ -10074,24 +10074,24 @@ split-lines {
     border: 1px solid #ccc;
 }
 /* -------------------------------------- */
-/* IMPACT THEME - CUSTOM PRICE COLORS */
+/* IMPACT THEME - CUSTOM PRICE COLORS & SIZE */
 /* -------------------------------------- */
 
-/* Change the color of the current, new **SALE PRICE** */
-/* This targets the price that IS NOT struck out */
+/* Change the color and **size** of the current, new **SALE PRICE** */
 .price-list .text-on-sale,
 .price-list .sale-price {
     color: #FF0000 !important; /* Example: Bright Red for SALE */
+    font-size: 24px !important; /* Adjust this value for desired size */
 }
 
-/* Change the color of the **REGULAR PRICE** (the struck-out price) */
-/* This targets the original, 'compare-at' price */
+/* Change the color and **size** of the **REGULAR PRICE** (the struck-out price) */
 .price-list .line-through {
-    color: #999999 !important; /* Example: Grey for Struck-Out Price */
+    color:rgb(0, 0, 0) !important; /* Example: Grey for Struck-Out Price */
+    font-size: 24px !important; /* Adjust this value for desired size (e.g., 20px if you want it slightly smaller than the sale price) */
 }
 
-/* Optionally, change the color of the **Sale Badge** itself (the little label) */
+/* Optionally, change the color of the Sale Badge itself */
 .badge--on-sale {
-    background-color: #FF0000 !important; /* Match the sale price color */
-    color: #FFFFFF !important; /* White text for the badge */
+    background-color:rgb(224, 0, 0) !important;
+    color: #FFFFFF !important; 
 }
