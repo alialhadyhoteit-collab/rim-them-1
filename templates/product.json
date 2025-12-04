@@ -24,6 +24,12 @@
             "heading_tag": "h2"
           }
         },
+        "price_VDj6mT": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
         "liquid_BrgKg9": {
           "type": "liquid",
           "settings": {
@@ -40,12 +46,6 @@
           "type": "liquid",
           "settings": {
             "liquid": "<div style=\"display: flex; align-items: center; padding: 10px 0; font-family: inherit;\">\n  \n  <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#333\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" style=\"margin-right: 10px; min-width: 24px;\">\n    <path d=\"M12 2L3 7v14h18V7L12 2z\"></path>\n    <polyline points=\"3 7 12 12 21 7\"></polyline>\n    <line x1=\"7\" y1=\"18\" x2=\"7\" y2=\"15\"></line>\n    <line x1=\"12\" y1=\"18\" x2=\"12\" y2=\"15\"></line>\n    <line x1=\"17\" y1=\"18\" x2=\"17\" y2=\"15\"></line>\n    \n    <path d=\"M14 9l2 2 4-4\" stroke=\"#4CAF50\" stroke-width=\"3\" fill=\"none\"></path>\n  </svg>\n  \n  <span style=\"font-size: 16px; font-weight: 500; color: #333; line-height: 1.2;\">\n    Payer en toute sécurité avec n'importe quelle banque\n  </span>\n</div>"
-          }
-        },
-        "price_VDj6mT": {
-          "type": "price",
-          "settings": {
-            "show_taxes_notice": false
           }
         },
         "variant_picker_cyQbkm": {
@@ -93,7 +93,7 @@
         "liquid_yhBQt3": {
           "type": "liquid",
           "settings": {
-            "liquid": "<div style=\"\n    /* Main container styling */\n    border: 1px solid #E57373; /* Light red/salmon color border */\n    border-left: 5px solid #D32F2F; /* Thick, dark red left border */\n    background-color: #FFEBEE; /* Very light pink/salmon background */\n    padding: 15px; \n    margin: 20px 0; /* Space above and below the banner */\n    font-family: Arial, sans-serif;\n    line-height: 1.5;\n\">\n    <p style=\"margin: 0 0 10px 0; font-size: 15px; color: #333;\">\n        <span style=\"font-weight: bold; color: #D32F2F;\">\n            Black Friday:\n        </span> \n        Célébrez le Black Friday avec deux articles de Boutique \n        <span style=\"font-weight: bold;\">De Zwan</span> \n        avec \n        <span style=\"font-weight: bold;\">Jusqu’à 70 % de réduction.</span>\n    </p>\n\n    <p style=\"margin: 0 0 5px 0; font-size: 14px; text-align: center; color: #555;\">\n        Économies supplémentaires avec des remises cumulables.\n    </p>\n\n    <p style=\"margin: 0; font-size: 14px; font-style: italic; text-align: center; color: #555;\">\n        Dépêchez-vous, quand c'est fini, c'est fini!\n    </p>\n</div>"
+            "liquid": "<!--\nBannière promotionnelle pour le 12e anniversaire de la boutique De Zwan.\nUtilise des styles en ligne pour un thème rouge et saumon.\n-->\n<div style=\"\n    /* Main container styling */\n    border: 1px solid #E57373; /* Bordure de couleur rouge clair/saumon */\n    border-left: 5px solid #D32F2F; /* Bordure gauche épaisse, rouge foncé */\n    background-color: #FFEBEE; /* Arrière-plan rose très clair/saumon */\n    padding: 15px;\n    margin: 20px 0; /* Espacement au-dessus et au-dessous de la bannière */\n    font-family: Arial, sans-serif;\n    line-height: 1.5;\n\">\n    <p style=\"margin: 0 0 10px 0; font-size: 15px; color: #333;\">\n        <span style=\"font-weight: bold; color: #D32F2F;\">\n            12e Anniversaire:\n        </span>\n        Célébrez le 12e anniversaire avec deux articles de Boutique\n        <span style=\"font-weight: bold;\">\n            De Zwan\n        </span>\n        avec\n        <span style=\"font-weight: bold;\">\n            Jusqu’à 70 % de réduction.\n        </span>\n    </p>\n\n    <p style=\"margin: 0 0 5px 0; font-size: 14px; text-align: center; color: #555;\">\n        Économies supplémentaires avec des remises cumulables.\n    </p>\n\n    <p style=\"margin: 0; font-size: 14px; font-style: italic; text-align: center; color: #555;\">\n        Dépêchez-vous, quand c'est fini, c'est fini!\n    </p>\n</div>"
           }
         },
         "description_kEyaTb": {
@@ -106,10 +106,10 @@
       "block_order": [
         "liquid_3WHxw7",
         "title_fjYh7d",
+        "price_VDj6mT",
         "liquid_BrgKg9",
         "liquid_hi6bwU",
         "liquid_kiegnW",
-        "price_VDj6mT",
         "variant_picker_cyQbkm",
         "magefan_size_chart_size_chart_link_U7x9f3",
         "quantity_selector_DkbADf",
@@ -134,7 +134,7 @@
         "background_gradient": "",
         "text_color": "",
         "input_background": "#ffffff",
-        "input_text_color": "#f83a3a"
+        "input_text_color": "#000000"
       }
     },
     "accordion_content_3pGWpA": {
