@@ -30,6 +30,12 @@
             "show_taxes_notice": false
           }
         },
+        "liquid_rgQAf6": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<!DOCTYPE html>\n<html lang=\"pl\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <title>Sale Point 1</title>\n  <style>\n    body {\n      margin: 0;\n      padding: 0;\n    }\n\n    /* POINT 1 – Pulsating Dot */\n    .pm-salepoint1 {\n      display: flex;\n      align-items: center;\n      font-size: 15px;\n      font-weight: 600;\n      margin: 10px 0 8px 0;\n    }\n\n    .pm-icon1 {\n      width: 12px;\n      height: 12px;\n      border-radius: 50%;\n      background-color: #e63946;\n      margin-right: 16px;\n      position: relative;\n      margin-left: 7px;\n    }\n\n    .pm-icon1::before {\n      content: '';\n      position: absolute;\n      top: 50%;\n      left: 50%;\n      width: 22px;\n      height: 22px;\n      background-color: #e63946;\n      opacity: 0.5;\n      border-radius: 50%;\n      transform: translate(-50%, -50%) scale(0.8);\n      animation: pm-pulse 2s ease-in-out infinite;\n    }\n\n    .pm-text1 {\n      color: #e63946;\n      font-weight: 600;\n    }\n\n    @keyframes pm-pulse {\n      0% {\n        transform: translate(-50%, -50%) scale(0.8);\n        opacity: 0.5;\n      }\n      50% {\n        transform: translate(-50%, -50%) scale(1.5);\n        opacity: 0;\n      }\n      100% {\n        transform: translate(-50%, -50%) scale(0.8);\n        opacity: 0;\n      }\n    }\n  </style>\n</head>\n<body>\n\n  <!-- POINT 1 -->\n  <div class=\"pm-salepoint1\">\n    <div class=\"pm-icon1\"></div>\n    <span class=\"pm-text1\">Presque épuisé!</span>\n  </div>\n\n</body>\n</html>"
+          }
+        },
         "liquid_BrgKg9": {
           "type": "liquid",
           "settings": {
@@ -84,10 +90,10 @@
             "payment_button_text_color": ""
           }
         },
-        "liquid_rgQAf6": {
+        "liquid_kQbaN3": {
           "type": "liquid",
           "settings": {
-            "liquid": "<!DOCTYPE html>\n<html lang=\"pl\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <title>Sale Point 1</title>\n  <style>\n    body {\n      margin: 0;\n      padding: 0;\n    }\n\n    /* POINT 1 – Pulsating Dot */\n    .pm-salepoint1 {\n      display: flex;\n      align-items: center;\n      font-size: 15px;\n      font-weight: 600;\n      margin: 10px 0 8px 0;\n    }\n\n    .pm-icon1 {\n      width: 12px;\n      height: 12px;\n      border-radius: 50%;\n      background-color: #e63946;\n      margin-right: 16px;\n      position: relative;\n      margin-left: 7px;\n    }\n\n    .pm-icon1::before {\n      content: '';\n      position: absolute;\n      top: 50%;\n      left: 50%;\n      width: 22px;\n      height: 22px;\n      background-color: #e63946;\n      opacity: 0.5;\n      border-radius: 50%;\n      transform: translate(-50%, -50%) scale(0.8);\n      animation: pm-pulse 2s ease-in-out infinite;\n    }\n\n    .pm-text1 {\n      color: #e63946;\n      font-weight: 600;\n    }\n\n    @keyframes pm-pulse {\n      0% {\n        transform: translate(-50%, -50%) scale(0.8);\n        opacity: 0.5;\n      }\n      50% {\n        transform: translate(-50%, -50%) scale(1.5);\n        opacity: 0;\n      }\n      100% {\n        transform: translate(-50%, -50%) scale(0.8);\n        opacity: 0;\n      }\n    }\n  </style>\n</head>\n<body>\n\n  <!-- POINT 1 -->\n  <div class=\"pm-salepoint1\">\n    <div class=\"pm-icon1\"></div>\n    <span class=\"pm-text1\">Presque épuisé!</span>\n  </div>\n\n</body>\n</html>"
+            "liquid": "<!DOCTYPE html>\n<html lang=\"fr\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Shipping Banner</title>\n    <style>\n        * {\n            margin: 0;\n            padding: 0;\n            box-sizing: border-box;\n        }\n\n        body {\n            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;\n            background-color: #f5f5f5;\n            padding: 20px;\n        }\n\n        .shipping-banner {\n            background-color: #f8f8f8;\n            padding: 8px 25px;\n            border-radius: 6px;\n            max-width: 700px;\n            margin: 0 auto;\n            display: flex;\n            justify-content: space-between;\n            align-items: center;\n            flex-wrap: wrap;\n            gap: 15px;\n        }\n\n        .shipping-item {\n            display: flex;\n            align-items: center;\n            gap: 6px;\n        }\n\n        .green-dot {\n            width: 10px;\n            height: 10px;\n            background-color: #4caf50;\n            border-radius: 50%;\n            position: relative;\n            animation: pulse 2s infinite;\n        }\n\n        .green-dot::before {\n            content: '';\n            position: absolute;\n            top: 50%;\n            left: 50%;\n            transform: translate(-50%, -50%);\n            width: 100%;\n            height: 100%;\n            background-color: #4caf50;\n            border-radius: 50%;\n            animation: wave 2s infinite;\n            opacity: 0;\n        }\n\n        @keyframes pulse {\n            0%, 100% {\n                transform: scale(1);\n            }\n            50% {\n                transform: scale(1.1);\n            }\n        }\n\n        @keyframes wave {\n            0% {\n                transform: translate(-50%, -50%) scale(1);\n                opacity: 0.8;\n            }\n            100% {\n                transform: translate(-50%, -50%) scale(2.5);\n                opacity: 0;\n            }\n        }\n\n        .shipping-text {\n            font-size: 12px;\n            font-weight: 600;\n            color: #333;\n        }\n\n        @media (max-width: 768px) {\n            .shipping-banner {\n                flex-direction: column;\n                gap: 10px;\n                padding: 8px 12px;\n            }\n\n            .shipping-text {\n                font-size: 11px;\n            }\n        }\n    </style>\n</head>\n<body>\n    <div class=\"shipping-banner\">\n        <div class=\"shipping-item\">\n            <div class=\"green-dot\"></div>\n            <div class=\"shipping-text\" id=\"shipping-date\">Envoyé le ven. 5 décembre</div>\n        </div>\n\n        <div class=\"shipping-item\">\n            <div class=\"shipping-text\">Livraison gratuite</div>\n        </div>\n    </div>\n\n    <script>\n        // Function to calculate shipping date (4 days from today)\n        function updateShippingDate() {\n            const today = new Date();\n            const shippingDate = new Date(today);\n            shippingDate.setDate(today.getDate() + 4); // Add 4 days\n\n            // French day names\n            const dayNames = ['dim.', 'lun.', 'mar.', 'mer.', 'jeu.', 'ven.', 'sam.'];\n            \n            // French month names\n            const monthNames = [\n                'janvier', 'février', 'mars', 'avril', 'mai', 'juin',\n                'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'\n            ];\n\n            const dayName = dayNames[shippingDate.getDay()];\n            const dayNumber = shippingDate.getDate();\n            const monthName = monthNames[shippingDate.getMonth()];\n\n            // Update the text\n            document.getElementById('shipping-date').textContent = \n                `Envoyé le ${dayName} ${dayNumber} ${monthName}`;\n        }\n\n        // Run when page loads\n        updateShippingDate();\n    </script>\n</body>\n</html>"
           }
         },
         "liquid_yhBQt3": {
@@ -107,6 +113,7 @@
         "liquid_3WHxw7",
         "title_fjYh7d",
         "price_VDj6mT",
+        "liquid_rgQAf6",
         "liquid_BrgKg9",
         "liquid_hi6bwU",
         "liquid_kiegnW",
@@ -114,7 +121,7 @@
         "magefan_size_chart_size_chart_link_U7x9f3",
         "quantity_selector_DkbADf",
         "buy_buttons_RrVTnc",
-        "liquid_rgQAf6",
+        "liquid_kQbaN3",
         "liquid_yhBQt3",
         "description_kEyaTb"
       ],
