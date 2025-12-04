@@ -33,19 +33,19 @@
         "liquid_BrgKg9": {
           "type": "liquid",
           "settings": {
-            "liquid": "<div style=\"display: flex; align-items: center; margin-bottom: 12px; font-family: Arial, sans-serif; font-size: 16px;\">\n    <span style=\"font-size: 20px; margin-right: 15px; flex-shrink: 0;\">\n        🚚\n    </span>\n    <span style=\"color: #333;\">\n        Livraison gratuite en France et en Belgique\n    </span>\n</div>"
+            "liquid": "<div style=\"display: flex; align-items: center; margin-bottom: 12px; font-family: Arial, sans-serif; font-size: 16px;\">\n    <span style=\"font-size: 20px; margin-right: 15px; flex-shrink: 0;\">\n        🚚\n    </span>\n    <span style=\"color: #333;\">\n        Livraison gratuite en France et en Belgique\n    </span>\n</div>\n<div style=\"display: flex; align-items: center; padding: 10px 0; font-family: inherit;\">\n  \n  <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#333\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" style=\"margin-right: 10px; min-width: 24px;\">\n    <path d=\"M12 2L3 7v14h18V7L12 2z\"></path>\n    <polyline points=\"3 7 12 12 21 7\"></polyline>\n    <line x1=\"7\" y1=\"18\" x2=\"7\" y2=\"15\"></line>\n    <line x1=\"12\" y1=\"18\" x2=\"12\" y2=\"15\"></line>\n    <line x1=\"17\" y1=\"18\" x2=\"17\" y2=\"15\"></line>\n    \n    <path d=\"M14 9l2 2 4-4\" stroke=\"#4CAF50\" stroke-width=\"3\" fill=\"none\"></path>\n  </svg>\n  \n  <span style=\"font-size: 16px; font-weight: 500; color: #333; line-height: 1.2;\">\n    Payer en toute sécurité avec n'importe quelle banque\n  </span>\n</div>\n<div style=\"display: flex; align-items: center; margin-bottom: 12px; font-family: Arial, sans-serif; font-size: 16px;\">\n    <span style=\"font-size: 20px; margin-right: 15px; flex-shrink: 0;\">\n        ⟳\n    </span>\n    <span style=\"color: #333;\">\n        Garantie de remboursement de 30 jour \n    </span>\n</div>"
           }
         },
         "liquid_hi6bwU": {
           "type": "liquid",
           "settings": {
-            "liquid": "<div style=\"display: flex; align-items: center; margin-bottom: 12px; font-family: Arial, sans-serif; font-size: 16px;\">\n    <span style=\"font-size: 20px; margin-right: 15px; flex-shrink: 0;\">\n        ⟳\n    </span>\n    <span style=\"color: #333;\">\n        Garantie de remboursement de 30 jour \n    </span>\n</div>"
+            "liquid": ""
           }
         },
         "liquid_kiegnW": {
           "type": "liquid",
           "settings": {
-            "liquid": "<div style=\"display: flex; align-items: center; padding: 10px 0; font-family: inherit;\">\n  \n  <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#333\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" style=\"margin-right: 10px; min-width: 24px;\">\n    <path d=\"M12 2L3 7v14h18V7L12 2z\"></path>\n    <polyline points=\"3 7 12 12 21 7\"></polyline>\n    <line x1=\"7\" y1=\"18\" x2=\"7\" y2=\"15\"></line>\n    <line x1=\"12\" y1=\"18\" x2=\"12\" y2=\"15\"></line>\n    <line x1=\"17\" y1=\"18\" x2=\"17\" y2=\"15\"></line>\n    \n    <path d=\"M14 9l2 2 4-4\" stroke=\"#4CAF50\" stroke-width=\"3\" fill=\"none\"></path>\n  </svg>\n  \n  <span style=\"font-size: 16px; font-weight: 500; color: #333; line-height: 1.2;\">\n    Payer en toute sécurité avec n'importe quelle banque\n  </span>\n</div>"
+            "liquid": ""
           }
         },
         "variant_picker_cyQbkm": {
