@@ -120,7 +120,7 @@
       ],
       "custom_css": [],
       "settings": {
-        "full_width": false,
+        "full_width": true,
         "show_fixed_add_to_cart": true,
         "desktop_media_width": 55,
         "desktop_media_layout": "carousel_thumbnails_bottom",
@@ -134,7 +134,7 @@
         "background_gradient": "",
         "text_color": "",
         "input_background": "#ffffff",
-        "input_text_color": "#000000"
+        "input_text_color": "#ffffff"
       }
     },
     "accordion_content_3pGWpA": {
