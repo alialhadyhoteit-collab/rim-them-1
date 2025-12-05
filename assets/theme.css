@@ -10080,14 +10080,14 @@ split-lines {
 /* Change the color and size of the current, new **SALE PRICE** */
 .price-list .text-on-sale,
 .price-list .sale-price {
-    color: #FF0000 !important; /* Example: Bright Red for SALE */
-    font-size: 24px !important; /* Price size */
+    color: #FF0000 !important; /* Adjust this HEX code for the color */
+    font-size: 24px !important; /* <--- PRICE FONT SIZE */
 }
 
 /* Change the color and size of the **REGULAR PRICE** (the struck-out price) */
 .price-list .line-through {
-    color: #999999 !important; /* Example: Grey for Struck-Out Price */
-    font-size: 24px !important; /* Price size */
+    color: #999999 !important; /* Adjust this HEX code for the color */
+    font-size: 24px !important; /* <--- REGULAR PRICE FONT SIZE */
 }
 
 /* -------------------------------------- */
@@ -10095,13 +10095,13 @@ split-lines {
 /* -------------------------------------- */
 
 .badge--on-sale {
-    background-color: #FF0000 !important; /* Badge background color */
-    color: #FFFFFF !important; /* Badge text color */
+    background-color: #FF0000 !important; /* <--- BADGE BACKGROUND COLOR */
+    color: #FFFFFF !important; /* <--- BADGE TEXT COLOR */
     
     /* MODERATE SIZE ADJUSTMENT */
-    font-size: 12px !important; /* Slightly larger text (down from 14px) */
+    font-size: 12px !important; /* <--- BADGE TEXT FONT SIZE */
     
     /* MODERATE PADDING ADJUSTMENT */
-    /* Vertical padding: 6px (smaller than 8px) | Horizontal padding: 10px (smaller than 12px) */
-    padding: 6px 10px !important;
+    /* Vertical padding (Top/Bottom) | Horizontal padding (Left/Right) */
+    padding: 6px 10px !important; /* <--- BADGE BOX SIZE (PADDING) */
 }
