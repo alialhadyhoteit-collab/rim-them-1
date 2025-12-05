@@ -10074,34 +10074,34 @@ split-lines {
     border: 1px solid #ccc;
 }
 /* -------------------------------------- */
-/* IMPACT THEME - CUSTOM PRICE COLORS & SIZE */
+/* IMPACT THEME - CUSTOM PRICE COLORS & SMALLER SIZE */
 /* -------------------------------------- */
 
 /* Change the color and size of the current, new **SALE PRICE** */
 .price-list .text-on-sale,
 .price-list .sale-price {
-    color: #FF0000 !important; /* Adjust this HEX code for the color */
-    font-size: 24px !important; /* <--- PRICE FONT SIZE */
+    color: #FF0000 !important; 
+    font-size: 18px !important; /* <--- SMALLER PRICE FONT SIZE (was 24px) */
 }
 
 /* Change the color and size of the **REGULAR PRICE** (the struck-out price) */
 .price-list .line-through {
-    color: #999999 !important; /* Adjust this HEX code for the color */
-    font-size: 24px !important; /* <--- REGULAR PRICE FONT SIZE */
+    color: #999999 !important; 
+    font-size: 18px !important; /* <--- SMALLER REGULAR PRICE FONT SIZE (was 24px) */
 }
 
 /* -------------------------------------- */
-/* SALE BADGE CUSTOMIZATION (Moderate Size Increase) */
+/* SALE BADGE CUSTOMIZATION (Smaller Size) */
 /* -------------------------------------- */
 
 .badge--on-sale {
-    background-color: #FF0000 !important; /* <--- BADGE BACKGROUND COLOR */
-    color: #FFFFFF !important; /* <--- BADGE TEXT COLOR */
+    background-color: #FF0000 !important; 
+    color: #FFFFFF !important; 
     
-    /* MODERATE SIZE ADJUSTMENT */
-    font-size: 12px !important; /* <--- BADGE TEXT FONT SIZE */
+    /* SMALLER SIZE ADJUSTMENT */
+    font-size: 10px !important; /* <--- SMALLER BADGE TEXT FONT SIZE (was 12px) */
     
-    /* MODERATE PADDING ADJUSTMENT */
+    /* SMALLER PADDING ADJUSTMENT */
     /* Vertical padding (Top/Bottom) | Horizontal padding (Left/Right) */
-    padding: 6px 10px !important; /* <--- BADGE BOX SIZE (PADDING) */
+    padding: 4px 8px !important; /* <--- SMALLER BADGE BOX SIZE (was 6px 10px) */
 }
