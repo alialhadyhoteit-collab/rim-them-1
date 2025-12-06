@@ -43,6 +43,7 @@
         },
         "magefan_size_chart_size_chart_link_U7x9f3": {
           "type": "shopify://apps/magefan-size-chart/blocks/size_chart_link/94351537-34e9-4bae-96b1-c1f26b180c07",
+          "disabled": true,
           "settings": {
             "mf_link_label": "Taille",
             "mf_link_button_type": "mfSizeChartLink",
