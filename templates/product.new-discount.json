@@ -53,6 +53,7 @@
         },
         "quantity_selector_DkbADf": {
           "type": "quantity_selector",
+          "disabled": true,
           "settings": {}
         },
         "liquid_rk7FbQ": {

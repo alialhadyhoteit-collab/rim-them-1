@@ -84,9 +84,19 @@
         "disabled": false,
         "settings": {}
       },
+      "17920835415960095625": {
+        "type": "shopify://apps/swatch-king/blocks/variant-swatch-king/0850b1e4-ba30-4a0d-a8f4-f9a939276d7d",
+        "disabled": false,
+        "settings": {
+          "alignment": "left",
+          "swatch_location": "After price",
+          "switch_on_hover": true,
+          "preselect_variant": false
+        }
+      },
       "12075128526103414267": {
         "type": "shopify://apps/bundlex/blocks/volume-discount-embed/c017a4b2-071a-4809-a2c2-1c5768f46bb9",
-        "disabled": true,
+        "disabled": false,
         "settings": {
           "hide_quantity": false,
           "custom_placement_selector": "",
@@ -96,16 +106,6 @@
           "variants_container_selector": "",
           "product_form_selector": "",
           "custom_css": ""
-        }
-      },
-      "17920835415960095625": {
-        "type": "shopify://apps/swatch-king/blocks/variant-swatch-king/0850b1e4-ba30-4a0d-a8f4-f9a939276d7d",
-        "disabled": false,
-        "settings": {
-          "alignment": "left",
-          "swatch_location": "After price",
-          "switch_on_hover": true,
-          "preselect_variant": false
         }
       }
     }
