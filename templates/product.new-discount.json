@@ -1,0 +1,756 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "liquid_3WHxw7": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<style>\n    /* CSS to style the stars to be green and bold */\n    .rating-container {\n        font-family: Arial, sans-serif;\n        display: flex; /* Aligns the stars and text horizontally */\n        align-items: center;\n    }\n\n    .rating-stars {\n        /* Sets the green color, similar to the image */\n        color: #4CAF50; \n        \n        /* Makes the star characters bold */\n        font-weight: bold; \n        \n        /* Adjusts size to be visually prominent */\n        font-size: 1.1em; \n        \n        /* Space between stars and text */\n        margin-right: 8px; \n    }\n    \n    .rating-text {\n        /* Ensures the text is dark and readable */\n        color: #333; \n        font-size: 0.95em;\n    }\n</style>\n\n<div class=\"rating-container\" itemscope itemtype=\"http://schema.org/Product\">\n    <meta itemprop=\"name\" content=\"MANTEAU D'HIVER ANIEK\">\n\n    <div itemprop=\"aggregateRating\" itemscope itemtype=\"http://schema.org/AggregateRating\">\n        \n        <span class=\"rating-stars\" aria-label=\"Note de 4,7 sur 5 étoiles\">\n            ★★★★★\n        </span>\n        \n        <span class=\"rating-text\">\n            <span itemprop=\"ratingValue\">4,7</span>/5 basé sur \n            <span itemprop=\"reviewCount\">1067</span> avis\n        </span>\n    </div>\n</div>"
+          }
+        },
+        "title_fjYh7d": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h4"
+          }
+        },
+        "price_VDj6mT": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
+        "variant_picker_cyQbkm": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "stack_blocks": false,
+            "selector_style": "block",
+            "swatch_selector_style": "none",
+            "variant_image_options": "",
+            "size_chart_page": ""
+          }
+        },
+        "magefan_size_chart_size_chart_link_U7x9f3": {
+          "type": "shopify://apps/magefan-size-chart/blocks/size_chart_link/94351537-34e9-4bae-96b1-c1f26b180c07",
+          "settings": {
+            "mf_link_label": "Taille",
+            "mf_link_button_type": "mfSizeChartLink",
+            "mf_display_style": "0",
+            "mf_drawer_position": "0",
+            "custom_css": ""
+          }
+        },
+        "quantity_selector_DkbADf": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "liquid_rk7FbQ": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<!DOCTYPE html>\n<html lang=\"fr\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <style>\n        * {\n            margin: 0;\n            padding: 0;\n            box-sizing: border-box;\n        }\n\n        body {\n            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;\n            background-color: transparent;\n        }\n\n        .promo-container {\n            width: 100%;\n            max-width: 100%;\n            padding: 0;\n            margin: 0;\n        }\n\n        .promo-item {\n            display: flex;\n            align-items: center;\n            gap: 8px;\n            padding: 3px 0;\n            margin: 0;\n            width: 100%;\n        }\n\n        /* Red dot with wave animation */\n        .red-dot {\n            width: 12px;\n            height: 12px;\n            background-color: #c94444;\n            border-radius: 50%;\n            flex-shrink: 0;\n            position: relative;\n            animation: pulse 2s infinite;\n        }\n\n        .red-dot::before {\n            content: '';\n            position: absolute;\n            top: 50%;\n            left: 50%;\n            transform: translate(-50%, -50%);\n            width: 100%;\n            height: 100%;\n            background-color: #c94444;\n            border-radius: 50%;\n            animation: wave 2s infinite;\n            opacity: 0;\n        }\n\n        @keyframes pulse {\n            0%, 100% { transform: scale(1); }\n            50% { transform: scale(1.1); }\n        }\n\n        @keyframes wave {\n            0% {\n                transform: translate(-50%, -50%) scale(1);\n                opacity: 0.8;\n            }\n            100% {\n                transform: translate(-50%, -50%) scale(2.5);\n                opacity: 0;\n            }\n        }\n\n        /* Icons */\n        .icon {\n            width: 20px;\n            height: 20px;\n            flex-shrink: 0;\n            display: flex;\n            align-items: center;\n            justify-content: center;\n            font-size: 16px;\n        }\n\n        /* Text */\n        .promo-text {\n            font-size: 13px;\n            font-weight: 400;\n            color: #333;\n            line-height: 1.2;\n            flex: 1;\n        }\n\n        .promo-text.red {\n            color: #c94444;\n        }\n\n        /* Mobile optimization */\n        @media (max-width: 768px) {\n            .promo-item {\n                gap: 6px;\n                padding: 2px 0;\n            }\n\n            .icon {\n                width: 18px;\n                height: 18px;\n                font-size: 15px;\n            }\n\n            .red-dot {\n                width: 10px;\n                height: 10px;\n            }\n\n            .promo-text {\n                font-size: 12px;\n            }\n        }\n\n        @media (max-width: 480px) {\n            .promo-item {\n                gap: 5px;\n            }\n\n            .icon {\n                width: 16px;\n                height: 16px;\n                font-size: 14px;\n            }\n\n            .red-dot {\n                width: 9px;\n                height: 9px;\n            }\n\n            .promo-text {\n                font-size: 11px;\n            }\n        }\n    </style>\n</head>\n<body>\n    <div class=\"promo-container\">\n        <!-- Presque épuisé -->\n        <div class=\"promo-item\">\n            <div class=\"red-dot\"></div>\n            <div class=\"promo-text red\">Presque épuisé!</div>\n        </div>\n\n        <!-- Livraison gratuite -->\n        <div class=\"promo-item\">\n            <div class=\"icon\">🚚</div>\n            <div class=\"promo-text\">Livraison gratuite FR & BE</div>\n        </div>\n\n        <!-- Garantie 30 jours -->\n        <div class=\"promo-item\">\n            <div class=\"icon\">↻</div>\n            <div class=\"promo-text\">Garantie 30 jours</div>\n        </div>\n\n        <!-- Paiement sécurisé -->\n        <div class=\"promo-item\">\n            <div class=\"icon\">🏛️</div>\n            <div class=\"promo-text\">Paiement 100% sécurisé</div>\n        </div>\n    </div>\n</body>\n</html>"
+          }
+        },
+        "buy_buttons_RrVTnc": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "show_gift_card_recipient": true,
+            "atc_button_background": "#000000",
+            "atc_button_text_color": "",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
+          }
+        },
+        "liquid_kQbaN3": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<!DOCTYPE html>\n<html lang=\"fr\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <style>\n        * {\n            margin: 0;\n            padding: 0;\n            box-sizing: border-box;\n        }\n\n        body {\n            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;\n            background-color: transparent;\n        }\n\n        .shipping-banner {\n            background-color: #f8f8f8;\n            padding: 10px 15px;\n            border-radius: 8px;\n            width: 100%;\n            max-width: 100%;\n            margin: 0;\n            display: flex;\n            justify-content: space-between;\n            align-items: center;\n            gap: 15px;\n        }\n\n        .shipping-item-left {\n            display: flex;\n            align-items: center;\n            gap: 8px;\n        }\n\n        .shipping-item-right {\n            display: flex;\n            align-items: center;\n            gap: 8px;\n            margin-left: auto;\n        }\n\n        .green-dot {\n            width: 12px;\n            height: 12px;\n            background-color: #4caf50;\n            border-radius: 50%;\n            position: relative;\n            animation: pulse 2s infinite;\n            flex-shrink: 0;\n        }\n\n        .green-dot::before {\n            content: '';\n            position: absolute;\n            top: 50%;\n            left: 50%;\n            transform: translate(-50%, -50%);\n            width: 100%;\n            height: 100%;\n            background-color: #4caf50;\n            border-radius: 50%;\n            animation: wave 2s infinite;\n            opacity: 0;\n        }\n\n        @keyframes pulse {\n            0%, 100% {\n                transform: scale(1);\n            }\n            50% {\n                transform: scale(1.1);\n            }\n        }\n\n        @keyframes wave {\n            0% {\n                transform: translate(-50%, -50%) scale(1);\n                opacity: 0.8;\n            }\n            100% {\n                transform: translate(-50%, -50%) scale(2.5);\n                opacity: 0;\n            }\n        }\n\n        .shipping-text {\n            font-size: 13px;\n            font-weight: 600;\n            color: #333;\n            white-space: nowrap;\n        }\n\n        /* Tablet */\n        @media (max-width: 768px) {\n            .shipping-banner {\n                padding: 8px 12px;\n                gap: 12px;\n            }\n\n            .shipping-item-left,\n            .shipping-item-right {\n                gap: 6px;\n            }\n\n            .shipping-text {\n                font-size: 12px;\n            }\n\n            .green-dot {\n                width: 10px;\n                height: 10px;\n            }\n        }\n\n        /* Mobile */\n        @media (max-width: 480px) {\n            .shipping-banner {\n                flex-direction: column;\n                padding: 8px 10px;\n                gap: 8px;\n                align-items: flex-start;\n            }\n\n            .shipping-item-right {\n                margin-left: 0;\n            }\n\n            .shipping-item-left,\n            .shipping-item-right {\n                gap: 6px;\n            }\n\n            .shipping-text {\n                font-size: 11px;\n                white-space: normal;\n            }\n\n            .green-dot {\n                width: 9px;\n                height: 9px;\n            }\n        }\n\n        /* Very small screens */\n        @media (max-width: 360px) {\n            .shipping-banner {\n                padding: 6px 8px;\n            }\n\n            .shipping-text {\n                font-size: 10px;\n            }\n        }\n    </style>\n</head>\n<body>\n    <div class=\"shipping-banner\">\n        <div class=\"shipping-item-left\">\n            <div class=\"green-dot\"></div>\n            <div class=\"shipping-text\" id=\"shipping-date\">Envoyé le ven. 5 décembre</div>\n        </div>\n    </div>\n\n    <script>\n        function updateShippingDate() {\n            const today = new Date();\n            const shippingDate = new Date(today);\n            shippingDate.setDate(today.getDate() + 4);\n\n            const dayNames = ['dim.', 'lun.', 'mar.', 'mer.', 'jeu.', 'ven.', 'sam.'];\n            const monthNames = [\n                'janvier', 'février', 'mars', 'avril', 'mai', 'juin',\n                'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'\n            ];\n\n            const dayName = dayNames[shippingDate.getDay()];\n            const dayNumber = shippingDate.getDate();\n            const monthName = monthNames[shippingDate.getMonth()];\n\n            document.getElementById('shipping-date').textContent = \n                `Envoyé le ${dayName} ${dayNumber} ${monthName}`;\n        }\n\n        updateShippingDate();\n    </script>\n</body>\n</html>"
+          }
+        },
+        "offer_QE6rd3": {
+          "type": "offer",
+          "settings": {
+            "text_alignment": "start",
+            "icon_position": "aligned",
+            "icon": "picto-coupon",
+            "icon_width": 24,
+            "title": "Offres Spéciales de Noël !",
+            "content": "",
+            "background": "#ffffff",
+            "text_color": "#1a1a1a"
+          }
+        },
+        "liquid_yhBQt3": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<!--\nBannière promotionnelle pour le 12e anniversaire de la boutique De Zwan.\nUtilise des styles en ligne pour un thème rouge et saumon.\n-->\n<div style=\"\n    /* Main container styling */\n    border: 1px solid #E57373; /* Bordure de couleur rouge clair/saumon */\n    border-left: 5px solid #D32F2F; /* Bordure gauche épaisse, rouge foncé */\n    background-color: #FFEBEE; /* Arrière-plan rose très clair/saumon */\n    padding: 15px;\n    margin: 20px 0; /* Espacement au-dessus et au-dessous de la bannière */\n    font-family: Arial, sans-serif;\n    line-height: 1.5;\n\">\n    <p style=\"margin: 0 0 10px 0; font-size: 15px; color: #333;\">\n        <span style=\"font-weight: bold; color: #D32F2F;\">\n            12e Anniversaire:\n        </span>\n        Célébrez le 12e anniversaire avec deux articles de Boutique\n        <span style=\"font-weight: bold;\">\n            De Zwan\n        </span>\n        avec\n        <span style=\"font-weight: bold;\">\n            Jusqu’à 70 % de réduction.\n        </span>\n    </p>\n\n    <p style=\"margin: 0 0 5px 0; font-size: 14px; text-align: center; color: #555;\">\n        Économies supplémentaires avec des remises cumulables.\n    </p>\n\n    <p style=\"margin: 0; font-size: 14px; font-style: italic; text-align: center; color: #555;\">\n        Dépêchez-vous, quand c'est fini, c'est fini!\n    </p>\n</div>"
+          }
+        },
+        "description_kEyaTb": {
+          "type": "description",
+          "settings": {
+            "collapse_content": false
+          }
+        }
+      },
+      "block_order": [
+        "liquid_3WHxw7",
+        "title_fjYh7d",
+        "price_VDj6mT",
+        "variant_picker_cyQbkm",
+        "magefan_size_chart_size_chart_link_U7x9f3",
+        "quantity_selector_DkbADf",
+        "liquid_rk7FbQ",
+        "buy_buttons_RrVTnc",
+        "liquid_kQbaN3",
+        "offer_QE6rd3",
+        "liquid_yhBQt3",
+        "description_kEyaTb"
+      ],
+      "custom_css": [],
+      "settings": {
+        "full_width": false,
+        "show_fixed_add_to_cart": true,
+        "desktop_media_width": 55,
+        "desktop_media_layout": "carousel_thumbnails_bottom",
+        "mobile_media_size": "contained",
+        "mobile_carousel_control": "dots",
+        "enable_video_autoplay": false,
+        "enable_video_looping": true,
+        "enable_image_zoom": false,
+        "max_image_zoom_level": 3,
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "input_background": "#ffffff",
+        "input_text_color": "#000000"
+      }
+    },
+    "related_products_BPNbfF": {
+      "type": "related-products",
+      "name": "Related products",
+      "settings": {
+        "recommendations_count": 6,
+        "products": [],
+        "full_width": true,
+        "stack_products": true,
+        "show_progress_bar": false,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 3,
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "accordion_content_3pGWpA": {
+      "type": "accordion-content",
+      "blocks": {
+        "item_fbVyXc": {
+          "type": "item",
+          "settings": {
+            "title": "",
+            "content": ""
+          }
+        },
+        "item_KMAEAr": {
+          "type": "item",
+          "settings": {
+            "title": "Garantie de remboursement de 30 jours",
+            "content": "<p>Nous sommes tellement convaincus que vous allez adorer notre produit que nous offrons une<strong>garantie de remboursement à 100 %</strong>sur chaque achat. Vous ne courez aucun risque.<br/>Si vous n’êtes pas entirement satisfait, il vous suffit de<strong>retourner le produit dans les 30 jours suivant la réception</strong>et nous vous<strong>rembourserons intégralement</strong>, sans poser de questions.<br/>Consultez notre politique de retour pour plus d’informations.<br/><br/></p>"
+          }
+        },
+        "item_t8Rgjp": {
+          "type": "item",
+          "settings": {
+            "title": "Toujours à votre disposition",
+            "content": "<p>Notre service client est disponible<strong>24 heures sur 24, 7 jours sur 7</strong>pour répondre à toutes vos questions. Qu’il s’agisse d’une commande, d’un retour ou d’une recommandation de produit —<strong>nous sommes toujours là pour vous aider</strong>.<br/></p>"
+          }
+        },
+        "item_NCn3Ce": {
+          "type": "item",
+          "settings": {
+            "title": "Livraison gratuite",
+            "content": "<p>Nous offrons la livraison gratuite en France et en Belgique. Vous pouvez facilement suivre votre colis grâce au numéro de suivi que vous recevrez </p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_fbVyXc",
+        "item_KMAEAr",
+        "item_t8Rgjp",
+        "item_NCn3Ce"
+      ],
+      "name": "Accordion content",
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "start",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
+    "11_hFJdiM": {
+      "type": "11",
+      "blocks": {
+        "image_DhWTpB": {
+          "type": "Image",
+          "settings": {
+            "review_icon": "shopify://shop_images/face-of-belgum-women.png",
+            "review_text": "Sophie B .Qualité et Style ImpeccablesJ'ai commandé une blouse et un pantalon de la collection femme, et la qualité est bluffante. Les coupes sont modernes et le tissu est très agréable à porter. De Zwan est définitivement ma nouvelle adresse mode !",
+            "review_rating": 5
+          }
+        },
+        "image_PJGiBh": {
+          "type": "Image",
+          "settings": {
+            "review_icon": "shopify://shop_images/face-belguim-men.png",
+            "review_text": "Lucas M. Le détail qui fait la différenceJ'étais à la recherche d'une nouvelle ceinture en cuir et d'un portefeuille pour homme. Les accessoires de De Zwan sont non seulement superbes, mais respirent la solidité. Livraison rapide et le packaging était soigné",
+            "review_rating": 4.6
+          }
+        },
+        "image_JzDR3U": {
+          "type": "Image",
+          "settings": {
+            "review_icon": "shopify://shop_images/belguim-women-old.png",
+            "review_text": "Camille D. Des Bijoux UniquesLes bijoux fantaisie de De Zwan sont un vrai coup de cœur. J'ai pris des boucles d'oreilles pendantes et un bracelet. Ils sont originaux et apportent une touche d'éclat à toutes mes tenues. Parfait pour se faire plaisir",
+            "review_rating": 4.5
+          }
+        },
+        "image_VgGfkn": {
+          "type": "Image",
+          "settings": {
+            "review_icon": "shopify://shop_images/man-in-blue-jacket.jpg",
+            "review_text": "Hugo V.                                                           Jamais Déçu !Je ne compte plus mes achats chez De Zwan. Que ce soit pour un pull, une paire de chaussettes ou un sac de voyage, la qualité est constante. La meilleure boutique en ligne pour s'habiller avec goût.",
+            "review_rating": 4.7
+          }
+        }
+      },
+      "block_order": [
+        "image_DhWTpB",
+        "image_PJGiBh",
+        "image_JzDR3U",
+        "image_VgGfkn"
+      ],
+      "disabled": true,
+      "name": "SS - Glow Testimonial",
+      "settings": {
+        "animation_time": 12,
+        "loop_amount": 1,
+        "header_before_gradient": "Nos clients",
+        "header_gradient": "adorent",
+        "header": "notre boutique",
+        "header_color": "#0b1128",
+        "header_font_size": 42,
+        "header_mob_font_size": 28,
+        "review_font_size": 13,
+        "review_font_color": "#0b1128",
+        "gradient_color_1": "#4222de",
+        "gradient_color_2": "#659bff",
+        "gradient_color_3": "#7ff6e8",
+        "blur_color": "#b8b1dc",
+        "background-color": "#ffffff",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "ss_scrolling_images_gQwCgy": {
+      "type": "ss-scrolling-images",
+      "blocks": {
+        "image_Hbg3DW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/blond-woman-with-winter-pine.jpg",
+            "url": ""
+          }
+        },
+        "image_gJBgCq": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/business-woman-with-wool-hat.jpg",
+            "url": ""
+          }
+        },
+        "image_EAka4w": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/casual-urban-menswear.jpg",
+            "url": ""
+          }
+        },
+        "image_xnNUUP": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/fashionable-man-in-hat.jpg",
+            "url": ""
+          }
+        },
+        "image_KHLfq6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/downtown-city-skyline.jpg",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_Hbg3DW",
+        "image_gJBgCq",
+        "image_EAka4w",
+        "image_xnNUUP",
+        "image_KHLfq6"
+      ],
+      "name": "SS - Scrolling images",
+      "settings": {
+        "heading": "",
+        "heading_custom": false,
+        "heading_font": "josefin_sans_n4",
+        "heading_size": 40,
+        "heading_height": 130,
+        "heading_align": "center",
+        "slider_speed": 13,
+        "slider_gap": 10,
+        "slider_gap_mobile": 10,
+        "slider_mt": 50,
+        "slider_direction": "left",
+        "pause_hover": false,
+        "image_width_desktop": 300,
+        "image_width_mobile": 120,
+        "image_height_desktop": 400,
+        "image_height_mobile": 200,
+        "image_radius": 10,
+        "use_content": true,
+        "content_position": "center",
+        "content_max_width": 340,
+        "content_max_width_mobile": 340,
+        "content_padding_vertical": 30,
+        "content_padding_horizontal": 30,
+        "content_distance": 60,
+        "content_radius": 10,
+        "content_border_thickness": 0,
+        "use_shadow": true,
+        "text": "<p>Plus de <strong>6000 personnes</strong>choisissent notre style —<strong>oserez-vous vous démarquer ?</strong></p>",
+        "text_custom": false,
+        "text_font": "assistant_n4",
+        "text_size": 24,
+        "text_height": 130,
+        "heading_color": "#000000",
+        "content_bg": "#ffffff",
+        "content_border_color": "#000000",
+        "text_color": "#000000",
+        "background_color": "#ffffff",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_horizontal": 0,
+        "padding_horizontal_mobile": 0,
+        "full_width": true,
+        "content_width": 120,
+        "border_thickness": 0,
+        "lazy": true
+      }
+    },
+    "timeline_WA3dRw": {
+      "type": "timeline",
+      "blocks": {
+        "slide_iWBAWi": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Gemini_Generated_Image_gj24pbgj24pbgj24.png",
+            "navigation_label": "Sur mesure",
+            "subheading": "",
+            "title": "Sur mesure",
+            "content": "<p>Mesures précises, ajustement parfait. Choisissez l'excellence<br/><br/></p>"
+          }
+        },
+        "slide_DtNkYV": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Gemini_Generated_Image_x7c17wx7c17wx7c1.png",
+            "navigation_label": "Matériaux de qualité",
+            "subheading": "",
+            "title": "Matériaux de qualité",
+            "content": "<p>Uniquement des fibres naturelles et précieuses. Un confort véritable, un luxe authentique. </p>"
+          }
+        },
+        "slide_xtrrHP": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/images.jpg",
+            "navigation_label": "Fabriqué à la main",
+            "subheading": "",
+            "title": "Fabriqué à la main",
+            "content": "<p>Chaque pièce est cousue à la main, conçue pour les hommes de caractère.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "slide_iWBAWi",
+        "slide_DtNkYV",
+        "slide_xtrrHP"
+      ],
+      "name": "Timeline",
+      "settings": {
+        "full_width": true,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "faq_9TRbPH": {
+      "type": "faq",
+      "blocks": {
+        "item_WdDUKD": {
+          "type": "item",
+          "settings": {
+            "title": "Quel est le délai de livraison ?",
+            "content": "<p>Nous livrons habituellement les articles en stock dans un délai de 6 à 9 jours<br/></p>"
+          }
+        },
+        "item_TRQaMp": {
+          "type": "item",
+          "settings": {
+            "title": "Comment puis-je suivre ma commande ?",
+            "content": "<p><strong>Pour vérifier le statut de livraison de votre commande, veuillez consulter l'e-mail de confirmation d'expédition que vous avez reçu.</strong></p><p><strong>Pour chaque colis expédié, vous recevrez un e-mail de confirmation qui comprend un lien de suivi.</strong></p><p><strong>Cet e-mail sera envoyé dès que votre commande aura été traitée et expédiée. Utilisez le lien de suivi pour suivre votre colis en temps réel.</strong></p>"
+          }
+        },
+        "item_wyw9wt": {
+          "type": "item",
+          "settings": {
+            "title": "Comment demander un retour ?",
+            "content": "<p><strong>Si votre commande est éligible à un retour, veuillez suivre les étapes suivantes pour démarrer le processus :</strong></p><ul><li><strong>Envoyez un e-mail via la section \"Contact\" de notre site web.</strong></li><li><strong>Dans cet e-mail, veuillez fournir les informations suivantes :Numéro de commandeRaison du retourPhoto du produit (s'il est endommagé)Nom et prénom du clientAdresse du client</strong></li></ul><p><strong>Nous vous contacterons ensuite pour vous fournir l'adresse de retour.</strong></p>"
+          }
+        },
+        "item_DbLPnM": {
+          "type": "item",
+          "settings": {
+            "title": "Comment recevoir mon remboursement ?",
+            "content": "<p><strong>Le remboursement sera toujours effectué via le mode de paiement que vous avez utilisé.</strong></p><p><strong>Si vous avez payé par carte de crédit, le montant des articles retournés sera remboursé directement sur votre carte de crédit.</strong></p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_WdDUKD",
+        "item_TRQaMp",
+        "item_wyw9wt",
+        "item_DbLPnM"
+      ],
+      "name": "FAQ",
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Foire aux questions",
+        "content": "",
+        "team_avatar_width": 160,
+        "support_hours": "",
+        "answer_time": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
+    "23_6Kp3yc": {
+      "type": "23",
+      "blocks": {
+        "item_eTPdBz": {
+          "type": "item",
+          "settings": {
+            "stars_count": 5,
+            "heading": "👞 Excellent rapport qualité-prix",
+            "text": "Difficile de trouver des pantalons qui me vont bien, mais les chinos de De Zwan sont coupés à la perfection. La taille correspond exactement, et le tissu stretch est idéal. Plus besoin de chercher ailleurs !",
+            "author_date": "Thomas G",
+            "author_image": "shopify://shop_images/man-belguim-face.png"
+          }
+        },
+        "item_MRYLp8": {
+          "type": "item",
+          "settings": {
+            "stars_count": 4,
+            "heading": "🧥 Qualité impressionnante et livraison rapide",
+            "text": "Ma nouvelle robe longue pour un mariage était splendide. Très élégante, elle tombait parfaitement sans être trop ajustée. Un vrai succès. Merci De Zwan !",
+            "author_date": "Jules P.",
+            "author_image": "shopify://shop_images/women-belguim-face.png"
+          }
+        },
+        "item_fNAQyD": {
+          "type": "item",
+          "settings": {
+            "stars_count": 4.5,
+            "heading": "💕 Vêtements confortables et modernes",
+            "text": "J'ai craqué pour un petit sac bandoulière chez De Zwan il y a deux mois. La qualité du cuir est excellente et la couleur n'a pas bougé. Il est assez spacieux pour tout ce dont j'ai besoin au quotidien. Très pratique.",
+            "author_date": "Jeanne C",
+            "author_image": "shopify://shop_images/women-image-belgum.png"
+          }
+        },
+        "item_tGNj9C": {
+          "type": "item",
+          "settings": {
+            "stars_count": 5,
+            "heading": "👕 Mode et confort réunis en un seul endroit",
+            "text": "J'achète régulièrement chez De Zwan pour moi (chemises) et pour ma femme (lingerie et tops). On trouve toujours notre bonheur à des prix justes. La livraison est rapide et le suivi de colis est toujours fiable.",
+            "author_date": "Marc H.",
+            "author_image": "shopify://shop_images/other-one.png"
+          }
+        }
+      },
+      "block_order": [
+        "item_eTPdBz",
+        "item_MRYLp8",
+        "item_fNAQyD",
+        "item_tGNj9C"
+      ],
+      "name": "SS - Testimonial #16",
+      "settings": {
+        "content_align": "center",
+        "content_align_mobile": "center",
+        "heading": "Nos clients en parlent mieux que nous !",
+        "heading_custom": false,
+        "heading_font": "josefin_sans_n4",
+        "heading_size": 40,
+        "heading_size_mobile": 24,
+        "heading_height": 130,
+        "rating_text": "Très bien !",
+        "rating_text_custom": false,
+        "rating_text_font": "josefin_sans_n4",
+        "rating_text_size": 24,
+        "rating_text_size_mobile": 20,
+        "rating_text_height": 130,
+        "rating_text_mt": 16,
+        "rating_text_mt_mobile": 16,
+        "rating": 4.7,
+        "rating_hide": false,
+        "rating_text_hide": false,
+        "stars_count": 5,
+        "stars_size": 28,
+        "stars_size_mobile": 24,
+        "text": "<p><em><strong>Sur la base de 652 avis</strong></em></p>",
+        "text_custom": false,
+        "text_font": "josefin_sans_n4",
+        "text_size": 20,
+        "text_size_mobile": 16,
+        "text_height": 130,
+        "text_mt": 16,
+        "text_mt_mobile": 16,
+        "scrolling_velocity": 80,
+        "scrolling_velocity_mobile": 100,
+        "reverse_direction": false,
+        "pause_hover": true,
+        "scrolling_mt": 36,
+        "scrolling_mt_mobile": 36,
+        "scrolling_gap": 20,
+        "scrolling_gap_mobile": 20,
+        "card_width": 360,
+        "card_width_mobile": 280,
+        "card_padding_vertical": 36,
+        "card_padding_vertical_mobile": 28,
+        "card_padding_horizontal": 40,
+        "card_padding_horizontal_mobile": 24,
+        "card_radius": 16,
+        "card_border_thickness": 0,
+        "card_shadow_style": "2",
+        "card_content_align": "center",
+        "card_content_align_mobile": "center",
+        "card_height": false,
+        "card_heading_custom": false,
+        "card_heading_font": "josefin_sans_n4",
+        "card_heading_size": 24,
+        "card_heading_size_mobile": 20,
+        "card_heading_height": 130,
+        "card_heading_mt": 16,
+        "card_heading_mt_mobile": 16,
+        "card_text_custom": false,
+        "card_text_font": "josefin_sans_n4",
+        "card_text_size": 14,
+        "card_text_size_mobile": 14,
+        "card_text_height": 150,
+        "card_text_mt": 16,
+        "card_text_mt_mobile": 16,
+        "card_text_more": "View More",
+        "card_text_less": "View Less",
+        "card_count_words": 60,
+        "author_image_size": 56,
+        "author_image_size_mobile": 40,
+        "author_image_position": "inline_text",
+        "card_author_date_text_custom": false,
+        "card_author_date_text_font": "josefin_sans_n4",
+        "card_author_date_text_size": 16,
+        "card_author_date_text_size_mobile": 16,
+        "card_author_date_text_height": 130,
+        "card_author_date_text_mt": 16,
+        "card_author_date_text_mt_mobile": 16,
+        "button": "",
+        "button_url": "",
+        "button_custom": false,
+        "button_font": "josefin_sans_n4",
+        "button_size": 16,
+        "button_size_mobile": 14,
+        "button_height": 100,
+        "button_align": "center",
+        "button_align_mobile": "center",
+        "button_mt": 32,
+        "button_mt_mobile": 28,
+        "button_padding_vertical": 16,
+        "button_padding_vertical_mobile": 16,
+        "button_padding_horizontal": 20,
+        "button_padding_horizontal_mobile": 20,
+        "button_radius": 8,
+        "button_border_thickness": 1,
+        "button_style": "outline",
+        "button_color": "#ffffff",
+        "button_hover_color": "#000000",
+        "button_bg_color": "#000000",
+        "button_bg_hover_color": "#ffffff",
+        "button_border_color": "#000000",
+        "button_border_hover_color": "#000000",
+        "card_bg_color": "#ffffff",
+        "card_border_color": "#000000",
+        "card_heading_color": "#000000",
+        "card_text_color": "#000000",
+        "card_author_date_text_color": "#000000",
+        "view_color": "#000000",
+        "heading_color": "#000000",
+        "rating_text_color": "#000000",
+        "stars_bg_color": "#00b67a",
+        "stars_color": "#ffffff",
+        "text_color": "#000000",
+        "background_color": "#ffffff",
+        "background_gradient": "linear-gradient(180deg, rgba(206, 239, 199, 1), rgba(255, 255, 255, 1) 100%)",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": true,
+        "content_width": 120,
+        "border_thickness": 0,
+        "lazy": true
+      }
+    },
+    "1763926383e0157ea8": {
+      "type": "apps",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "text_with_icons_CBjHip": {
+      "type": "text-with-icons",
+      "blocks": {
+        "item_6ygnD3": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-box",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Livraison express",
+            "content": "<p>Les colis sont toujours envoyés par <strong>livraison express</strong> et <strong>suivi</strong> via <strong>bpost</strong></p>"
+          }
+        },
+        "item_HetW8L": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-chat",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Service client",
+            "content": "<p>Nous sommes disponibles 24h/24 et 7j/7 pour vous aider.</p>"
+          }
+        },
+        "item_PEahDK": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-lock",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Paiement sécurisé",
+            "content": "<p>Chez <strong>De Zwan</strong>, vous pouvez effectuer votre paiement en toute sécurité.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_6ygnD3",
+        "item_HetW8L",
+        "item_PEahDK"
+      ],
+      "name": "Text with icons",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "title": "",
+        "heading_tag": "h5",
+        "text_alignment": "center",
+        "icon_spacing": "medium",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "related_products_BPNbfF",
+    "accordion_content_3pGWpA",
+    "11_hFJdiM",
+    "ss_scrolling_images_gQwCgy",
+    "timeline_WA3dRw",
+    "faq_9TRbPH",
+    "23_6Kp3yc",
+    "1763926383e0157ea8",
+    "text_with_icons_CBjHip"
+  ]
+}
