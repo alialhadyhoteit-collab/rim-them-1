@@ -12,28 +12,6 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "g_translate_shop_translator_app_block_dropdown_with_flags_BKphJC": {
-          "type": "shopify://apps/g-translate-shop-translator/blocks/app-block-dropdown_with_flags/408a74ac-f92d-43cf-a1b1-a044341e66bd",
-          "settings": {
-            "horizontal_position": "left",
-            "vertical_position": "bottom",
-            "open_direction": "bottom",
-            "native_language_names": true,
-            "flag_size": "32",
-            "flag_style": "2d",
-            "switcher_text_color": "#666666",
-            "switcher_arrow_color": "#666666",
-            "switcher_border_color": "#cccccc",
-            "switcher_background_color": "#ffffff",
-            "switcher_background_shadow_color": "#efefef",
-            "switcher_background_hover_color": "#ffffff",
-            "dropdown_text_color": "#000000",
-            "dropdown_hover_color": "#ffffff",
-            "dropdown_background_color": "#eeeeee",
-            "wrapper_selector": "",
-            "custom_css": ""
-          }
-        },
         "liquid_3WHxw7": {
           "type": "liquid",
           "settings": {
@@ -129,7 +107,6 @@
         }
       },
       "block_order": [
-        "g_translate_shop_translator_app_block_dropdown_with_flags_BKphJC",
         "liquid_3WHxw7",
         "title_fjYh7d",
         "price_VDj6mT",
