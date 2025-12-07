@@ -139,7 +139,7 @@
         "disabled": false,
         "settings": {
           "horizontal_position": "left",
-          "vertical_position": "top",
+          "vertical_position": "bottom",
           "native_language_names": true,
           "flag_size": "32",
           "flag_style": "3d",
