@@ -166,7 +166,7 @@
         "settings": {
           "horizontal_position": "left",
           "vertical_position": "bottom",
-          "open_direction": "top",
+          "open_direction": "right",
           "native_language_names": true,
           "flag_style": "2d",
           "wrapper_selector": "",
